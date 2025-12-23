@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ArrowLeft, ArrowRight, MapPin, Calendar, Clock } from 'lucide-react';
 import { routing } from '@/i18n/routing';
 import { getProjectBySlug, getAllProjectSlugs, type Project } from '@/data/projects';
+import { generateBreadcrumbSchemaWithLabels } from '@/lib/schema/breadcrumb';
 
 interface PageProps {
   params: Promise<{
@@ -88,8 +89,56 @@ export default async function ProjectDetailPage({ params }: PageProps) {
     projectDescription = '';
   }
 
+  // Project Schema for SEO
+  const projectSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: projectTitle,
+    description: projectDescription || `${t(`categories.${project.category}`)} remodeling project in ${project.location}`,
+    creator: {
+      '@type': 'Organization',
+      name: 'H Remodeling',
+      '@id': 'https://h-remodeling.com',
+    },
+    image: project.images.map((img) => ({
+      '@type': 'ImageObject',
+      url: img,
+      caption: projectTitle,
+    })),
+    dateCreated: project.year,
+    locationCreated: {
+      '@type': 'Place',
+      name: project.location,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: project.location.split(',')[0].trim(),
+        addressRegion: project.location.includes('MD') ? 'MD' : project.location.includes('VA') ? 'VA' : 'DC',
+      },
+    },
+    keywords: `${project.category} remodeling, ${project.location}, H Remodeling`,
+    url: `https://h-remodeling.com/${locale}/projects/${slug}`,
+  };
+
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = generateBreadcrumbSchemaWithLabels(
+    locale,
+    [
+      { path: '/projects', label: t('title') },
+      { path: `/projects/${slug}`, label: projectTitle },
+    ]
+  );
+
   return (
     <div className="pt-20">
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Back Link */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link

@@ -150,7 +150,7 @@ export default async function Image() {
             }}
           >
             <span>📍</span>
-            <span>Serving Maryland, Virginia & Washington D.C.</span>
+            <span>Serving Maryland & Virginia</span>
           </div>
         </div>
 

@@ -15,14 +15,23 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'H Remodeling | Kitchen, Bathroom, Flooring & Deck Experts in DMV',
   description: 'H Remodeling provides quality kitchen remodeling, bathroom renovation, flooring installation, and deck building services in Maryland, Virginia, and Washington D.C.',
-  keywords: 'kitchen remodel, bathroom remodel, flooring, decking, DMV, Maryland, Virginia, Washington DC, home renovation',
+  keywords: 'kitchen remodel, bathroom remodel, flooring, decking, DMV, Maryland, Virginia, Washington DC, home renovation, Bethesda, Arlington, McLean, Alexandria',
   verification: {
-    google: 'lHNtTmihGmQbbGQGzRHp7qRPoicVIikvZQ_7g-kkJe4',
+    google: ['lHNtTmihGmQbbGQGzRHp7qRPoicVIikvZQ_7g-kkJe4', '3c-mYnyE2HwnVuvk6U9SskM1o_nCSXinmT7LEnzPjQ4'],
   },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
+  },
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      'en': `${BASE_URL}/en`,
+      'zh': `${BASE_URL}/zh`,
+      'ko': `${BASE_URL}/ko`,
+      'x-default': `${BASE_URL}/en`,
+    },
   },
   openGraph: {
     title: 'H Remodeling | Quality Remodeling in DMV Area',
@@ -45,6 +54,16 @@ export const metadata: Metadata = {
     title: 'H Remodeling | Kitchen, Bathroom, Flooring & Deck Experts in DMV',
     description: 'Transform your home with H Remodeling. Expert kitchen, bathroom, flooring, and deck services.',
     images: ['/og-image.png'],
+  },
+  other: {
+    'geo.region': 'US-MD;US-VA;US-DC',
+    'geo.placename': 'Maryland;Virginia;Washington D.C.',
+    'geo.position': '38.9072;-77.0369',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
   },
 };
 
@@ -75,7 +94,6 @@ const structuredData = {
   areaServed: [
     { '@type': 'State', name: 'Maryland' },
     { '@type': 'State', name: 'Virginia' },
-    { '@type': 'City', name: 'Washington D.C.' },
   ],
   serviceType: [
     'Kitchen Remodeling',

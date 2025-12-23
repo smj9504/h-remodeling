@@ -104,7 +104,7 @@ export default function ProjectsClient({ locale, translations }: ProjectsClientP
                   <div className="aspect-[4/3] relative">
                     <Image
                       src={project.image}
-                      alt={project.slug}
+                      alt={`${translations.categories[project.category as keyof typeof translations.categories]} remodeling project in ${project.location} completed by H Remodeling`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />

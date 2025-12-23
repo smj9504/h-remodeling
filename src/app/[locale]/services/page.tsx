@@ -12,9 +12,35 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'services' });
+
+  const BASE_URL = 'https://h-remodeling.com';
+
   return {
-    title: `${t('title')} | H Remodeling`,
-    description: t('description'),
+    title: `${t('title')} - Kitchen, Bathroom, Flooring, Deck | H Remodeling DMV`,
+    description: `${t('description')} Expert services in Maryland, Virginia, and Washington D.C. - Kitchen remodeling, bathroom renovation, flooring installation, and deck building.`,
+    keywords: 'kitchen remodel DMV, bathroom renovation Maryland, flooring Virginia, deck building DC, kitchen cabinets Bethesda, bathroom remodel Arlington, hardwood floors McLean, composite deck Alexandria',
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/services`,
+      languages: {
+        'en': `${BASE_URL}/en/services`,
+        'zh': `${BASE_URL}/zh/services`,
+        'ko': `${BASE_URL}/ko/services`,
+      },
+    },
+    openGraph: {
+      title: `${t('title')} | H Remodeling DMV`,
+      description: `${t('description')} Serving Maryland, Virginia, and Washington D.C.`,
+      type: 'website',
+      url: `${BASE_URL}/${locale}/services`,
+      images: [
+        {
+          url: `${BASE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: 'H Remodeling Services - Kitchen, Bathroom, Flooring, Deck',
+        },
+      ],
+    },
   };
 }
 
@@ -44,12 +70,49 @@ const servicesData = [
 export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  
+
   const t = await getTranslations('services');
   const tCta = await getTranslations('cta');
 
+  // Service Schema for SEO
+  const servicesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: servicesData.map((service, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Service',
+        name: t(`${service.id}.title`),
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'H Remodeling',
+          '@id': 'https://h-remodeling.com',
+        },
+        description: t(`${service.id}.description`),
+        areaServed: [
+          { '@type': 'State', name: 'Maryland' },
+          { '@type': 'State', name: 'Virginia' },
+          { '@type': 'Place', name: 'Washington D.C.' },
+        ],
+        serviceType: `${service.id.charAt(0).toUpperCase() + service.id.slice(1)} Remodeling`,
+        image: service.image,
+        url: `https://h-remodeling.com/${locale}/services#${service.id}`,
+        offers: {
+          '@type': 'Offer',
+          availability: 'https://schema.org/InStock',
+        },
+      },
+    })),
+  };
+
   return (
     <div className="pt-20">
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +146,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={t(`${service.id}.title`)}
+                    alt={`${t(`${service.id}.title`)} - Professional ${service.id} remodeling services in Maryland, Virginia, and Washington D.C. by H Remodeling`}
                     fill
                     className="object-cover"
                   />

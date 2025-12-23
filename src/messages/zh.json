@@ -18,22 +18,22 @@
   "services": {
     "title": "我们的服务",
     "subtitle": "服务项目",
-    "description": "家不仅仅是一栋建筑，更是家人团聚、创造美好回忆、生活发生的地方。正因如此，无论是小规模翻新还是全面改造，我们都以尊重、精心规划和贴心的个性化服务对待每一个项目。",
+    "description": "服务于 Maryland（马里兰州）、Virginia（弗吉尼亚州）和 Washington D.C.（华盛顿特区）的业主，我们为 Bethesda、Arlington、McLean、Alexandria、Annandale、Vienna、Fairfax 和 Rockville 等社区提供优质装修服务。家不仅仅是一栋建筑，更是家人团聚、创造美好回忆、生活发生的地方。",
     "kitchen": {
-      "title": "厨房改造",
-      "description": "全面的厨房改造，包括橱柜、台面、岛台和现代电器。"
+      "title": "DMV 地区厨房改造",
+      "description": "H Remodeling 为您改造厨房。我们服务 Maryland（马里兰州）、Virginia（弗吉尼亚州）和 Washington D.C.（华盛顿特区），提供全面的厨房翻新服务，包括定制橱柜、石英和花岗岩台面、厨房岛台、现代电器、后挡板瓷砖和照明设计。"
     },
     "bathroom": {
-      "title": "浴室改造",
-      "description": "豪华浴室翻新，从洗手台到步入式淋浴房和定制瓷砖。"
+      "title": "DMV 地区浴室改造",
+      "description": "为 Maryland（马里兰州）、Virginia（弗吉尼亚州）和 D.C.（华盛顿特区）提供豪华浴室改造服务。从步入式淋浴房、独立式浴缸到定制洗手台、地暖、瓷砖工程和现代固定装置 - 我们在您家中打造水疗般的浴室。"
     },
     "flooring": {
-      "title": "地板安装",
-      "description": "优质硬木、LVP、瓷砖、地毯和环氧地坪安装，适用于家中每个房间。"
+      "title": "地板安装 - MD, VA, DC",
+      "description": "为 DMV 地区的住宅提供优质地板安装服务。我们专注于硬木、豪华乙烯基地板（LVP）、瓷砖和石材、地毯、环氧地坪和层压板，并提供专业的底层地板维修服务。"
     },
     "decking": {
-      "title": "露台建造",
-      "description": "使用复合材料、木材和高级材料定制露台建造。"
+      "title": "露台建造和维修 - DMV",
+      "description": "服务于 Maryland（马里兰州）、Virginia（弗吉尼亚州）和 Washington D.C.（华盛顿特区）的定制露台建造和维修。专业安装复合露台、木质露台、栏杆、凉亭和户外照明，打造美丽的户外生活空间。"
     },
     "learnMore": "了解更多"
   },

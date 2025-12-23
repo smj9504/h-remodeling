@@ -137,8 +137,7 @@ Create `.env.local` for local development:
 
 - **Phone:** (703) 585-9517
 - **Email:** hremodeling05@gmail.com
-- **Service Area:** Maryland, Virginia, Washington D.C.
-
+- **Service Area:** Maryland, Virginia
 ## 📄 License
 
 Private - H Remodeling © 2024

@@ -133,7 +133,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-3 text-neutral-400">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">Maryland, Virginia, Washington D.C.</span>
+                <span className="text-sm">Maryland & Virginia</span>
               </li>
             </ul>
           </div>
