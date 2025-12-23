@@ -30,9 +30,6 @@ const nextConfig = {
   // Performance optimizations
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header for security
-
-  // Production optimizations
-  swcMinify: true, // Use SWC for faster minification
 };
 
 export default withNextIntl(nextConfig);
