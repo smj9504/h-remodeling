@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 4,
-    slug: 'compact-kitchen-dc',
+    slug: 'compact-kitchen-annandale',
     category: 'kitchen',
     location: 'Annandale, VA',
     year: '2024',
