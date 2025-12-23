@@ -18,22 +18,22 @@
   "services": {
     "title": "Our Services",
     "subtitle": "What We Do",
-    "description": "Serving homeowners across Maryland, Virginia, and Washington D.C., we bring quality remodeling services to communities including Bethesda, Arlington, McLean, Alexandria, Annandale, Vienna, Fairfax, and Rockville. Your home is more than just a structure - it's where your family gathers, where memories are made, and where life happens.",
+    "description": "Serving homeowners across Maryland and Northern Virginia, we bring quality remodeling services with respect, careful planning, and a warm, personalized touch. Your home is more than just a structure - it's where your family gathers, where memories are made, and where life happens.",
     "kitchen": {
-      "title": "Kitchen Remodeling in DMV Area",
-      "description": "Transform your kitchen with H Remodeling. We serve Maryland, Virginia, and Washington D.C. with complete kitchen renovations including custom cabinets, quartz & granite countertops, kitchen islands, modern appliances, backsplash tile, and lighting design."
+      "title": "Kitchen Remodeling in Maryland & Northern Virginia",
+      "description": "Transform your kitchen with H Remodeling. We serve Maryland and Northern Virginia with complete kitchen renovations including custom cabinets, quartz & granite countertops, kitchen islands, modern appliances, backsplash tile, and lighting design."
     },
     "bathroom": {
-      "title": "Bathroom Renovation in DMV",
-      "description": "Luxurious bathroom remodeling services across Maryland, Virginia, and D.C. From walk-in showers and freestanding tubs to custom vanities, heated floors, and modern fixtures - we create spa-like bathrooms in your home."
+      "title": "Bathroom Renovation in MD & Northern VA",
+      "description": "Luxurious bathroom remodeling services across Maryland and Northern Virginia. From walk-in showers and freestanding tubs to custom vanities, heated floors, and modern fixtures - we create spa-like bathrooms in your home."
     },
     "flooring": {
-      "title": "Flooring Installation - MD, VA, DC",
-      "description": "Premium flooring installation for homes in the DMV area. We specialize in hardwood, luxury vinyl plank (LVP), tile & stone, carpet, epoxy flooring, and laminate with expert subfloor repair services."
+      "title": "Flooring Installation - MD & Northern VA",
+      "description": "Premium flooring installation for homes in Maryland and Northern Virginia. We specialize in hardwood, luxury vinyl plank (LVP), tile & stone, carpet, epoxy flooring, and laminate with expert subfloor repair services."
     },
     "decking": {
-      "title": "Deck Building & Repair - DMV",
-      "description": "Custom deck construction and repair serving Maryland, Virginia, and Washington D.C. Expert installation of composite decking, wood decking, railings, pergolas, and outdoor lighting for beautiful outdoor living spaces."
+      "title": "Deck Building & Repair - MD & Northern VA",
+      "description": "Custom deck construction and repair serving Maryland and Northern Virginia. Expert installation of composite decking, wood decking, railings, pergolas, and outdoor lighting for beautiful outdoor living spaces."
     },
     "learnMore": "Learn More"
   },
