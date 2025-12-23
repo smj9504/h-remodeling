@@ -1,0 +1,250 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "subtitle": "Transform Your Space",
+    "title": "Quality Remodeling",
+    "titleHighlight": "in DMV Area",
+    "description": "H Remodeling delivers exceptional kitchen, bathroom, flooring, and deck renovations across Maryland, Virginia, and Washington D.C.",
+    "cta": "View Our Work",
+    "ctaSecondary": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "What We Do",
+    "description": "We specialize in transforming homes with quality craftsmanship and attention to detail.",
+    "kitchen": {
+      "title": "Kitchen Remodel",
+      "description": "Complete kitchen transformations including cabinets, countertops, islands, and modern appliances."
+    },
+    "bathroom": {
+      "title": "Bathroom Remodel",
+      "description": "Luxurious bathroom renovations from vanities to walk-in showers and custom tile work."
+    },
+    "flooring": {
+      "title": "Flooring",
+      "description": "Premium hardwood, LVP, tile, carpet, and epoxy flooring installation for every room in your home."
+    },
+    "decking": {
+      "title": "Decking",
+      "description": "Custom deck construction using composite, wood, and premium materials for outdoor living."
+    },
+    "learnMore": "Learn More"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Recent Work",
+    "description": "Browse our portfolio of completed remodeling projects across the DMV area.",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects",
+    "backToProjects": "Back to Projects",
+    "startYourProject": "Start Your Project",
+    "categories": {
+      "all": "All",
+      "kitchen": "Kitchen",
+      "bathroom": "Bathroom",
+      "flooring": "Flooring",
+      "decking": "Decking"
+    },
+    "details": {
+      "title": "Project Details",
+      "location": "Location",
+      "year": "Year",
+      "duration": "Duration"
+    }
+  },
+  "projectDetails": {
+    "modern-kitchen-bethesda": {
+      "title": "Open Concept Kitchen with Island",
+      "description": "This bright, open-concept kitchen pairs soft gray cabinetry with crisp white countertops and a subway tile backsplash. The large island with pendant lighting creates a perfect gathering space, while light wood-look flooring adds warmth throughout."
+    },
+    "contemporary-kitchen-arlington": {
+      "title": "Kitchen with Dining Nook View",
+      "description": "Gray shaker cabinets and white quartz countertops create a timeless look in this well-lit kitchen. The space flows seamlessly into a cozy dining area with large windows, perfect for natural light and family meals."
+    },
+    "elegant-kitchen-mclean": {
+      "title": "Elegant Kitchen with Archway Detail",
+      "description": "Sophisticated gray cabinetry meets white countertops in this open layout. An elegant archway leads to additional rooms, while the spacious island and recessed lighting create an inviting atmosphere for cooking and entertaining."
+    },
+    "compact-kitchen-dc": {
+      "title": "Compact Kitchen Mid-Renovation",
+      "description": "This in-progress photo shows a smart renovation of a smaller kitchen space. Fresh white cabinetry with modern hardware and a charcoal subway tile backsplash maximize both style and function in a compact footprint."
+    },
+    "coastal-kitchen-alexandria": {
+      "title": "Coastal-Style White Kitchen",
+      "description": "White shaker cabinets paired with speckled granite countertops give this kitchen a fresh coastal feel. Large windows flood the space with natural light, while the breakfast bar island provides casual seating for quick meals."
+    },
+    "classic-white-kitchen-vienna": {
+      "title": "Classic White Kitchen with Butcher Block",
+      "description": "Timeless white cabinetry gets a warm upgrade with a natural maple butcher block island. Professional-grade appliances and abundant storage make this kitchen as functional as it is beautiful for home chefs."
+    },
+    "modern-black-white-kitchen-fairfax": {
+      "title": "Modern Black and White Kitchen",
+      "description": "Sleek dark lower cabinets contrast beautifully with bright white walls and counters in this contemporary design. Large windows bring in abundant natural light, while the modern kitchen opens up to outdoor living space."
+    },
+    "luxury-winter-kitchen-potomac": {
+      "title": "Luxury Kitchen with Winter Views",
+      "description": "Elegant light gray cabinetry frames a winter wonderland view in this high-end kitchen. Dramatic veined countertops, glass pendant lights, and premium finishes throughout create a space that's both stunning and supremely functional."
+    },
+    "modern-walnut-bathroom-arlington": {
+      "title": "Modern Bathroom with Brass Accents",
+      "description": "Rich walnut cabinetry pairs with white penny tile and gold fixtures for a sophisticated look. The floating vanity and frameless mirrors create an airy feel, while the white hexagonal floor tile adds visual interest."
+    },
+    "classic-subway-tile-bathroom-vienna": {
+      "title": "Classic White Subway Tile Bath",
+      "description": "Timeless white subway tiles with dark grout create clean lines throughout this bath. A frameless glass shower, white vanity with marble-look counters, and black fixtures deliver a fresh, modern take on classic design."
+    },
+    "farmhouse-bathroom-silver-spring": {
+      "title": "Farmhouse-Style Rustic Bathroom",
+      "description": "White subway tiles and reclaimed wood vanity blend farmhouse charm with modern function. Black matte fixtures and hex floor tiles add character, while the walk-in shower with built-in niche provides practical storage."
+    },
+    "luxury-marble-bathroom-potomac": {
+      "title": "Luxury Master Bath with Soaking Tub",
+      "description": "This spa-like master bathroom centers around a stunning freestanding soaking tub with rose gold filler. Marble-look tiles, a navy vanity with gold hardware, and elegant chandeliers create a truly luxurious retreat."
+    },
+    "navy-marble-bathroom-bethesda": {
+      "title": "Navy and Marble Double Vanity Bath",
+      "description": "A sophisticated double vanity in deep navy with marble counters anchors this elegant bathroom. Matte black faucets, oversized mirrors, and clean white walls create a refined space perfect for busy mornings."
+    },
+    "teal-gold-bathroom-mclean": {
+      "title": "Teal and Gold Accent Bathroom",
+      "description": "Deep teal cabinetry with brass hardware makes a bold statement in this stylish bath. White geometric tile, round gold mirrors, and a herringbone floor pattern add layers of sophisticated detail."
+    },
+    "compact-bathroom-rockville": {
+      "title": "Compact Powder Room Update",
+      "description": "This efficient small bathroom makes smart use of space with a streamlined gray vanity and modern fixtures. Clean lines and a neutral palette keep the compact room feeling open and fresh."
+    },
+    "epoxy-garage-arlington": {
+      "title": "Durable Garage Floor Coating",
+      "description": "High-quality epoxy coating with decorative flakes transforms this garage into a clean, professional space. The durable surface resists stains and wear, making maintenance easy while adding serious curb appeal."
+    },
+    "commercial-epoxy-fairfax": {
+      "title": "Glossy Commercial-Grade Flooring",
+      "description": "This mirror-like epoxy finish creates a stunning, professional look for commercial or residential spaces. The seamless blue coating is incredibly easy to clean and stands up to heavy traffic with style."
+    },
+    "gray-flake-garage-bethesda": {
+      "title": "Modern Gray Flake Garage Floor",
+      "description": "A sophisticated gray epoxy system with contrasting flakes brings new life to this spacious garage. The professional finish not only looks great but provides long-lasting protection against oil, chemicals, and daily wear."
+    },
+    "luxury-vinyl-entrance-mclean": {
+      "title": "Elegant Entrance with Wide Plank Flooring",
+      "description": "Wide-plank luxury vinyl flooring in a natural wood tone creates a welcoming first impression. The realistic grain and easy maintenance make this an ideal choice for high-traffic entryways."
+    },
+    "tan-garage-coating-potomac": {
+      "title": "Neutral Tan Garage Floor System",
+      "description": "A warm tan epoxy coating with subtle flakes brightens this two-car garage while hiding dirt and imperfections. Professional installation ensures a flawless finish that will last for years to come."
+    },
+    "herringbone-lvp-silver-spring": {
+      "title": "Designer Herringbone Pattern Floor",
+      "description": "Luxury vinyl planks installed in a sophisticated herringbone pattern add instant elegance to any room. The natural oak finish and unique layout create visual interest while remaining durable and waterproof."
+    },
+    "basement-flooring-alexandria": {
+      "title": "Basement Flooring Transformation",
+      "description": "This mid-installation shot captures a basement getting new laminate flooring. The gray wood-look planks will transform the lower level into warm, livable space perfect for family gatherings."
+    },
+    "modern-deck-lighting-alexandria": {
+      "title": "Contemporary Deck with Built-In Lighting",
+      "description": "This stunning modern deck features integrated LED step lighting and a sleek multi-level design. Gray composite decking pairs beautifully with the contemporary home, creating an elegant outdoor entertainment space."
+    },
+    "cedar-deck-bethesda": {
+      "title": "Warm Cedar Deck with Railing",
+      "description": "Natural cedar decking in rich tones creates an inviting backyard retreat. The traditional railing and spacious layout provide safety and plenty of room for outdoor furniture and summer barbecues."
+    },
+    "gray-composite-deck-arlington": {
+      "title": "Modern Gray Composite Deck with Steps",
+      "description": "Low-maintenance composite decking in sophisticated gray tones offers the look of wood without the upkeep. Built-in LED lighting on the wide steps adds safety and ambiance for evening outdoor living."
+    },
+    "front-porch-deck-vienna": {
+      "title": "Welcoming Front Porch Deck",
+      "description": "A cheerful golden-toned deck expands this home's outdoor living space right off the front entrance. Perfect for morning coffee or relaxing with neighbors, this deck adds both function and curb appeal."
+    },
+    "composite-deck-potomac": {
+      "title": "Spacious Composite Deck Installation",
+      "description": "Modern brown composite decking with white vinyl railings creates a clean, maintenance-free outdoor space. The durable material looks great year-round and provides a perfect spot for outdoor dining and relaxation."
+    },
+    "multi-level-deck-mclean": {
+      "title": "Multi-Level Deck with Fire Pit",
+      "description": "This impressive multi-tiered deck design maximizes outdoor living with distinct zones for dining and lounging. The custom fire pit centerpiece and black metal railings create a resort-style backyard perfect for entertaining."
+    },
+    "rooftop-deck-dc": {
+      "title": "Contemporary Dark Composite Deck",
+      "description": "Sleek dark brown composite decking creates a modern, sophisticated rooftop retreat. Low-maintenance materials and clean lines make this urban outdoor space both stylish and practical for city living."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Who We Are",
+    "description": "H Remodeling is a trusted remodeling contractor serving the DMV area. With years of experience and a commitment to quality, we transform houses into dream homes.",
+    "experience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "satisfaction": "Client Satisfaction",
+    "statesServed": "States Served",
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality Craftsmanship",
+      "qualityDesc": "We use premium materials and proven techniques.",
+      "communication": "Clear Communication",
+      "communicationDesc": "We keep you informed every step of the way.",
+      "timeline": "On-Time Delivery",
+      "timelineDesc": "We respect your time and meet our deadlines."
+    },
+    "whyChoose": {
+      "title": "Why Choose H Remodeling?",
+      "licensed": "Licensed & Insured",
+      "licensedDesc": "Fully licensed contractor with comprehensive insurance coverage for your peace of mind.",
+      "team": "Experienced Team",
+      "teamDesc": "Skilled craftsmen with years of experience in residential remodeling.",
+      "materials": "Quality Materials",
+      "materialsDesc": "We use only premium materials from trusted suppliers for lasting results."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "description": "Ready to start your remodeling project? Contact us for a free consultation and estimate.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Service Interested In",
+      "selectService": "Select a service",
+      "message": "Tell us about your project",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Mon - Sat: 8AM - 6PM",
+      "area": "Service Area",
+      "areaValue": "Maryland, Virginia, Washington D.C."
+    },
+    "social": {
+      "title": "Follow Us",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Home?",
+    "description": "Contact us today for a free consultation and estimate.",
+    "button": "Get Started"
+  },
+  "footer": {
+    "description": "Quality remodeling services in the DMV area. Kitchen, bathroom, flooring, and decking specialists.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "© 2024 H Remodeling. All rights reserved.",
+    "servingArea": "Proudly serving Maryland, Virginia, and Washington D.C."
+  }
+}

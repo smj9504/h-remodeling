@@ -1,0 +1,250 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "projects": "项目",
+    "contact": "联系我们",
+    "getQuote": "免费估价"
+  },
+  "hero": {
+    "subtitle": "改造您的空间",
+    "title": "优质装修服务",
+    "titleHighlight": "DMV地区",
+    "description": "H Remodeling 在马里兰州、弗吉尼亚州和华盛顿特区提供卓越的厨房、浴室、地板和露台装修服务。",
+    "cta": "查看案例",
+    "ctaSecondary": "联系我们"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "服务项目",
+    "description": "我们专注于以优质工艺和细致入微的关注来改造房屋。",
+    "kitchen": {
+      "title": "厨房改造",
+      "description": "全面的厨房改造，包括橱柜、台面、岛台和现代电器。"
+    },
+    "bathroom": {
+      "title": "浴室改造",
+      "description": "豪华浴室翻新，从洗手台到步入式淋浴房和定制瓷砖。"
+    },
+    "flooring": {
+      "title": "地板安装",
+      "description": "优质硬木、LVP、瓷砖、地毯和环氧地坪安装，适用于家中每个房间。"
+    },
+    "decking": {
+      "title": "露台建造",
+      "description": "使用复合材料、木材和高级材料定制露台建造。"
+    },
+    "learnMore": "了解更多"
+  },
+  "projects": {
+    "title": "我们的项目",
+    "subtitle": "近期作品",
+    "description": "浏览我们在DMV地区完成的装修项目组合。",
+    "viewProject": "查看项目",
+    "viewAll": "查看所有项目",
+    "backToProjects": "返回项目列表",
+    "startYourProject": "开始您的项目",
+    "categories": {
+      "all": "全部",
+      "kitchen": "厨房",
+      "bathroom": "浴室",
+      "flooring": "地板",
+      "decking": "露台"
+    },
+    "details": {
+      "title": "项目详情",
+      "location": "位置",
+      "year": "年份",
+      "duration": "工期"
+    }
+  },
+  "projectDetails": {
+    "modern-kitchen-bethesda": {
+      "title": "带中岛的开放式厨房",
+      "description": "这个明亮开放的厨房采用柔和的灰色橱柜，搭配白色台面和地铁瓷砖背板。带吊灯的大型中岛营造出完美的聚会空间，浅色木纹地板为整体增添温暖氛围。"
+    },
+    "contemporary-kitchen-arlington": {
+      "title": "带用餐区的厨房",
+      "description": "灰色摇柄橱柜和白色石英台面打造出永恒经典的外观。空间无缝连接到带大窗户的温馨用餐区，采光充足，非常适合家庭聚餐。"
+    },
+    "elegant-kitchen-mclean": {
+      "title": "带拱门细节的优雅厨房",
+      "description": "精致的灰色橱柜与白色台面在开放式布局中完美结合。优雅的拱门通向其他房间，宽敞的中岛和嵌入式照明营造出温馨的烹饪和待客氛围。"
+    },
+    "compact-kitchen-dc": {
+      "title": "紧凑型厨房改造中",
+      "description": "这张施工中的照片展示了小型厨房空间的智能改造。清新的白色橱柜配现代五金件，炭灰色地铁瓷砖背板在紧凑空间中实现风格与功能的完美平衡。"
+    },
+    "coastal-kitchen-alexandria": {
+      "title": "海岸风格白色厨房",
+      "description": "白色摇柄橱柜搭配斑点花岗岩台面，营造清新的海岸风格。大窗户让空间充满自然光线，早餐吧中岛提供便捷的用餐座位。"
+    },
+    "classic-white-kitchen-vienna": {
+      "title": "配实木砧板岛的经典白厨房",
+      "description": "永恒的白色橱柜搭配天然枫木砧板岛台，增添温暖质感。专业级电器和充足储物空间让这个厨房既美观又实用，满足烹饪爱好者的所有需求。"
+    },
+    "modern-black-white-kitchen-fairfax": {
+      "title": "现代黑白厨房",
+      "description": "时尚的深色下柜与明亮的白色墙面和台面形成优美对比。大窗户带来充足自然光线，现代厨房无缝连接户外生活空间。"
+    },
+    "luxury-winter-kitchen-potomac": {
+      "title": "冬景豪华厨房",
+      "description": "优雅的浅灰色橱柜框住窗外的冬日美景，打造高端厨房空间。大理石纹理台面、玻璃吊灯和高级饰面材料，创造既惊艳又实用的完美空间。"
+    },
+    "modern-walnut-bathroom-arlington": {
+      "title": "配黄铜点缀的现代浴室",
+      "description": "深色胡桃木橱柜搭配白色便士砖和金色五金件，营造精致氛围。悬浮式洗手台和无框镜子创造轻盈感，白色六角地砖增添视觉趣味。"
+    },
+    "classic-subway-tile-bathroom-vienna": {
+      "title": "经典白色地铁砖浴室",
+      "description": "经典白色地铁砖配深色填缝剂，打造清爽线条。无框玻璃淋浴房、大理石纹台面白色洗手台和黑色五金件，赋予经典设计现代新意。"
+    },
+    "farmhouse-bathroom-silver-spring": {
+      "title": "农舍风格乡村浴室",
+      "description": "白色地铁砖和再生木洗手台将农舍魅力与现代功能完美融合。黑色亚光五金件和六角地砖增添个性，带壁龛的步入式淋浴房提供实用储物空间。"
+    },
+    "luxury-marble-bathroom-potomac": {
+      "title": "配独立浴缸的豪华主浴室",
+      "description": "这个水疗般的主浴室以配玫瑰金水龙头的精美独立浴缸为中心。大理石纹瓷砖、带金色五金件的海军蓝洗手台和优雅吊灯，打造真正的奢华静修空间。"
+    },
+    "navy-marble-bathroom-bethesda": {
+      "title": "海军蓝配大理石双人洗手台浴室",
+      "description": "深海军蓝配大理石台面的精致双人洗手台是这个优雅浴室的焦点。亚光黑水龙头、超大镜子和纯净白墙，打造适合忙碌清晨的精致空间。"
+    },
+    "teal-gold-bathroom-mclean": {
+      "title": "青绿配金色点缀浴室",
+      "description": "配黄铜五金件的深青绿色橱柜在这个时尚浴室中彰显个性。白色几何瓷砖、圆形金色镜子和人字形地板图案增添精致层次感。"
+    },
+    "compact-bathroom-rockville": {
+      "title": "紧凑型盥洗室翻新",
+      "description": "这个高效小浴室采用流线型灰色洗手台和现代五金件，巧妙利用空间。简洁线条和中性色调让紧凑空间保持开阔清新感。"
+    },
+    "epoxy-garage-arlington": {
+      "title": "耐用车库地板涂层",
+      "description": "带装饰颗粒的高品质环氧涂层将车库改造成整洁专业的空间。耐用表面抗污耐磨，易于维护，同时大幅提升房屋外观吸引力。"
+    },
+    "commercial-epoxy-fairfax": {
+      "title": "光泽商业级地板",
+      "description": "镜面般的环氧涂层为商业或住宅空间创造令人惊艳的专业外观。无缝蓝色涂层极易清洁，在高流量区域依然保持风格。"
+    },
+    "gray-flake-garage-bethesda": {
+      "title": "现代灰色颗粒车库地板",
+      "description": "带对比颗粒的精致灰色环氧系统为这个宽敞车库注入新活力。专业饰面不仅外观出色，更提供持久保护，抵御油污、化学品和日常磨损。"
+    },
+    "luxury-vinyl-entrance-mclean": {
+      "title": "配宽板地板的优雅入口",
+      "description": "天然木色调的宽板豪华乙烯基地板营造温馨的第一印象。逼真纹理和易于维护的特点，使其成为高流量入口区域的理想选择。"
+    },
+    "tan-garage-coating-potomac": {
+      "title": "中性棕褐色车库地板系统",
+      "description": "带细微颗粒的温暖棕褐色环氧涂层照亮双车库，同时隐藏污垢和瑕疵。专业安装确保完美饰面，经久耐用。"
+    },
+    "herringbone-lvp-silver-spring": {
+      "title": "设计师人字形地板",
+      "description": "以精致人字形图案铺设的豪华乙烯基地板为任何房间增添即时优雅感。天然橡木饰面和独特布局创造视觉趣味，同时保持耐用防水特性。"
+    },
+    "basement-flooring-alexandria": {
+      "title": "地下室地板改造中",
+      "description": "这张施工中的照片记录了地下室铺设新强化地板的过程。灰色木纹板材将把下层空间改造成温暖宜居、非常适合家庭聚会的区域。"
+    },
+    "modern-deck-lighting-alexandria": {
+      "title": "配内置照明的现代平台",
+      "description": "这个令人惊艳的现代平台配备集成LED台阶照明和时尚多层设计。灰色复合平台与现代住宅完美搭配，打造优雅的户外娱乐空间。"
+    },
+    "cedar-deck-bethesda": {
+      "title": "温暖雪松后院平台",
+      "description": "色调丰富的天然雪松平台打造宜人的后院休闲空间。传统栏杆和宽敞布局提供安全保障，并为户外家具和夏季烧烤提供充足空间。"
+    },
+    "gray-composite-deck-arlington": {
+      "title": "配台阶的现代灰色复合平台",
+      "description": "精致灰色调的低维护复合平台提供木材外观而无需维护。宽阔台阶上的内置LED照明为夜晚户外生活增添安全和氛围。"
+    },
+    "front-porch-deck-vienna": {
+      "title": "温馨前廊平台",
+      "description": "明快的金色调平台从前门延伸，扩展住宅的户外生活空间。非常适合早晨喝咖啡或与邻居休闲聊天，既实用又提升房屋外观吸引力。"
+    },
+    "composite-deck-potomac": {
+      "title": "宽敞复合平台安装",
+      "description": "配白色乙烯基栏杆的现代棕色复合平台打造整洁免维护的户外空间。耐用材料全年保持美观，为户外用餐和休闲提供完美场所。"
+    },
+    "multi-level-deck-mclean": {
+      "title": "配火坑的多层平台",
+      "description": "这个令人印象深刻的多层平台设计通过独立的用餐和休闲区域最大化户外生活空间。定制火坑中心装置和黑色金属栏杆打造度假村风格后院，非常适合招待客人。"
+    },
+    "rooftop-deck-dc": {
+      "title": "现代深色复合平台",
+      "description": "时尚的深棕色复合平台打造现代精致的屋顶休闲空间。低维护材料和简洁线条让这个城市户外空间既时尚又实用，非常适合都市生活。"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "公司介绍",
+    "description": "H Remodeling 是服务于DMV地区的值得信赖的装修承包商。凭借多年的经验和对质量的承诺，我们将房屋改造成梦想家园。",
+    "experience": "年经验",
+    "projectsCompleted": "完成项目",
+    "satisfaction": "客户满意度",
+    "statesServed": "服务州数",
+    "values": {
+      "title": "我们的价值观",
+      "quality": "优质工艺",
+      "qualityDesc": "我们使用优质材料和成熟技术。",
+      "communication": "清晰沟通",
+      "communicationDesc": "我们让您了解每一步进展。",
+      "timeline": "准时交付",
+      "timelineDesc": "我们尊重您的时间并按时完成。"
+    },
+    "whyChoose": {
+      "title": "为什么选择 H Remodeling？",
+      "licensed": "持证与保险",
+      "licensedDesc": "完全持证的承包商，拥有全面的保险覆盖，让您安心无忧。",
+      "team": "经验丰富的团队",
+      "teamDesc": "拥有多年住宅装修经验的熟练工匠。",
+      "materials": "优质材料",
+      "materialsDesc": "我们只使用来自可信供应商的优质材料，确保持久效果。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "取得联系",
+    "description": "准备开始您的装修项目？联系我们获取免费咨询和估价。",
+    "form": {
+      "name": "您的姓名",
+      "email": "电子邮件",
+      "phone": "电话号码",
+      "service": "感兴趣的服务",
+      "selectService": "选择服务",
+      "message": "告诉我们您的项目",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "success": "谢谢！我们会尽快回复您。",
+      "error": "出了点问题，请重试。"
+    },
+    "info": {
+      "phone": "电话",
+      "email": "电子邮件",
+      "hours": "营业时间",
+      "hoursValue": "周一至周六：上午8点 - 下午6点",
+      "area": "服务区域",
+      "areaValue": "马里兰州、弗吉尼亚州、华盛顿特区"
+    },
+    "social": {
+      "title": "关注我们",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    }
+  },
+  "cta": {
+    "title": "准备好改造您的家了吗？",
+    "description": "今天联系我们获取免费咨询和估价。",
+    "button": "开始咨询"
+  },
+  "footer": {
+    "description": "DMV地区优质装修服务。厨房、浴室、地板和露台专家。",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "contact": "联系方式",
+    "copyright": "© 2024 H Remodeling. 版权所有。",
+    "servingArea": "服务于马里兰州、弗吉尼亚州和华盛顿特区"
+  }
+}
