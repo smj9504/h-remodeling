@@ -10,8 +10,8 @@
   "hero": {
     "subtitle": "공간을 새롭게",
     "title": "프리미엄 리모델링",
-    "titleHighlight": "DMV 지역",
-    "description": "H Remodeling은 메릴랜드, 버지니아, 워싱턴 D.C. 전역에서 최고 품질의 주방, 욕실, 바닥재, 데크 리모델링을 제공합니다.",
+    "titleHighlight": "버지니아 & 메릴랜드",
+    "description": "H Remodeling은 버지니아와 메릴랜드 전역에서 최고 품질의 주방, 욕실, 바닥재, 데크 리모델링을 제공합니다.",
     "cta": "시공 사례 보기",
     "ctaSecondary": "문의하기"
   },
@@ -40,7 +40,7 @@
   "projects": {
     "title": "시공 사례",
     "subtitle": "최근 프로젝트",
-    "description": "DMV 지역에서 완료한 리모델링 프로젝트를 확인해 보세요.",
+    "description": "버지니아와 메릴랜드에서 완료한 리모델링 프로젝트를 확인해 보세요.",
     "viewProject": "프로젝트 보기",
     "viewAll": "전체 보기",
     "backToProjects": "프로젝트 목록으로",
@@ -226,7 +226,7 @@
       "hours": "영업 시간",
       "hoursValue": "월 - 토: 오전 8시 - 오후 6시",
       "area": "서비스 지역",
-      "areaValue": "메릴랜드, 버지니아, 워싱턴 D.C."
+      "areaValue": "버지니아, 메릴랜드"
     },
     "social": {
       "title": "SNS 팔로우",
@@ -240,11 +240,11 @@
     "button": "상담 시작"
   },
   "footer": {
-    "description": "DMV 지역 프리미엄 리모델링 서비스. 주방, 욕실, 바닥재, 데크 전문.",
+    "description": "버지니아와 메릴랜드 프리미엄 리모델링 서비스. 주방, 욕실, 바닥재, 데크 전문.",
     "quickLinks": "바로가기",
     "services": "서비스",
     "contact": "연락처",
     "copyright": "© 2024 H Remodeling. All rights reserved.",
-    "servingArea": "메릴랜드, 버지니아, 워싱턴 D.C. 지역 서비스"
+    "servingArea": "버지니아와 메릴랜드 지역 서비스"
   }
 }

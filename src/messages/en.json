@@ -10,8 +10,8 @@
   "hero": {
     "subtitle": "Transform Your Space",
     "title": "Quality Remodeling",
-    "titleHighlight": "in DMV Area",
-    "description": "H Remodeling delivers exceptional kitchen, bathroom, flooring, and deck renovations across Maryland, Virginia, and Washington D.C.",
+    "titleHighlight": "in Virginia & Maryland",
+    "description": "H Remodeling delivers exceptional kitchen, bathroom, flooring, and deck renovations across Virginia and Maryland.",
     "cta": "View Our Work",
     "ctaSecondary": "Contact Us"
   },
@@ -40,7 +40,7 @@
   "projects": {
     "title": "Our Projects",
     "subtitle": "Recent Work",
-    "description": "Browse our portfolio of completed remodeling projects across the DMV area.",
+    "description": "Browse our portfolio of completed remodeling projects across Virginia and Maryland.",
     "viewProject": "View Project",
     "viewAll": "View All Projects",
     "backToProjects": "Back to Projects",
@@ -226,7 +226,7 @@
       "hours": "Business Hours",
       "hoursValue": "Mon - Sat: 8AM - 6PM",
       "area": "Service Area",
-      "areaValue": "Maryland, Virginia, Washington D.C."
+      "areaValue": "Virginia, Maryland"
     },
     "social": {
       "title": "Follow Us",
@@ -240,11 +240,11 @@
     "button": "Get Started"
   },
   "footer": {
-    "description": "Quality remodeling services in the DMV area. Kitchen, bathroom, flooring, and decking specialists.",
+    "description": "Quality remodeling services in Virginia and Maryland. Kitchen, bathroom, flooring, and decking specialists.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "contact": "Contact",
     "copyright": "© 2024 H Remodeling. All rights reserved.",
-    "servingArea": "Proudly serving Maryland, Virginia, and Washington D.C."
+    "servingArea": "Proudly serving Virginia and Maryland."
   }
 }

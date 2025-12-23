@@ -10,8 +10,8 @@
   "hero": {
     "subtitle": "改造您的空间",
     "title": "优质装修服务",
-    "titleHighlight": "DMV地区",
-    "description": "H Remodeling 在马里兰州、弗吉尼亚州和华盛顿特区提供卓越的厨房、浴室、地板和露台装修服务。",
+    "titleHighlight": "弗吉尼亚和马里兰",
+    "description": "H Remodeling 在弗吉尼亚州和马里兰州提供卓越的厨房、浴室、地板和露台装修服务。",
     "cta": "查看案例",
     "ctaSecondary": "联系我们"
   },
@@ -40,7 +40,7 @@
   "projects": {
     "title": "我们的项目",
     "subtitle": "近期作品",
-    "description": "浏览我们在DMV地区完成的装修项目组合。",
+    "description": "浏览我们在弗吉尼亚州和马里兰州完成的装修项目组合。",
     "viewProject": "查看项目",
     "viewAll": "查看所有项目",
     "backToProjects": "返回项目列表",
@@ -226,7 +226,7 @@
       "hours": "营业时间",
       "hoursValue": "周一至周六：上午8点 - 下午6点",
       "area": "服务区域",
-      "areaValue": "马里兰州、弗吉尼亚州、华盛顿特区"
+      "areaValue": "弗吉尼亚州、马里兰州"
     },
     "social": {
       "title": "关注我们",
@@ -240,11 +240,11 @@
     "button": "开始咨询"
   },
   "footer": {
-    "description": "DMV地区优质装修服务。厨房、浴室、地板和露台专家。",
+    "description": "弗吉尼亚州和马里兰州优质装修服务。厨房、浴室、地板和露台专家。",
     "quickLinks": "快速链接",
     "services": "服务",
     "contact": "联系方式",
     "copyright": "© 2024 H Remodeling. 版权所有。",
-    "servingArea": "服务于马里兰州、弗吉尼亚州和华盛顿特区"
+    "servingArea": "服务于弗吉尼亚州和马里兰州"
   }
 }
