@@ -67,46 +67,24 @@ export async function POST(request: NextRequest) {
                 <!-- Name -->
                 <tr>
                   <td style="padding-bottom: 20px;">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td width="30" valign="top">
-                          <div style="width: 24px; height: 24px; background-color: #e5dccb; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: #8a6a50; font-size: 14px; font-weight: 600;">👤</span>
-                          </div>
-                        </td>
-                        <td style="padding-left: 12px;">
-                          <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
-                            Name
-                          </p>
-                          <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                            ${name}
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
+                    <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
+                      Name
+                    </p>
+                    <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
+                      ${name}
+                    </p>
                   </td>
                 </tr>
 
                 <!-- Phone -->
                 <tr>
                   <td style="padding-bottom: 20px;">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td width="30" valign="top">
-                          <div style="width: 24px; height: 24px; background-color: #e5dccb; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: #8a6a50; font-size: 14px; font-weight: 600;">📞</span>
-                          </div>
-                        </td>
-                        <td style="padding-left: 12px;">
-                          <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
-                            Phone
-                          </p>
-                          <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                            <a href="tel:${phone}" style="color: #b3936b; text-decoration: none;">${phone}</a>
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
+                    <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
+                      Phone
+                    </p>
+                    <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
+                      <a href="tel:${phone}" style="color: #b3936b; text-decoration: none;">${phone}</a>
+                    </p>
                   </td>
                 </tr>
 
@@ -114,23 +92,12 @@ export async function POST(request: NextRequest) {
                 ${email ? `
                 <tr>
                   <td style="padding-bottom: 20px;">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td width="30" valign="top">
-                          <div style="width: 24px; height: 24px; background-color: #e5dccb; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: #8a6a50; font-size: 14px; font-weight: 600;">✉️</span>
-                          </div>
-                        </td>
-                        <td style="padding-left: 12px;">
-                          <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
-                            Email
-                          </p>
-                          <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                            <a href="mailto:${email}" style="color: #b3936b; text-decoration: none;">${email}</a>
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
+                    <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
+                      Email
+                    </p>
+                    <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
+                      <a href="mailto:${email}" style="color: #b3936b; text-decoration: none;">${email}</a>
+                    </p>
                   </td>
                 </tr>
                 ` : ''}
