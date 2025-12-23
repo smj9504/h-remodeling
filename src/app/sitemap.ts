@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     locales.map((locale) => ({
       url: `${BASE_URL}/${locale}${page}`,
       lastModified: new Date(),
-      changeFrequency: page === '' ? 'weekly' : 'monthly' as const,
+      changeFrequency: (page === '' ? 'weekly' : 'monthly') as 'weekly' | 'monthly',
       priority: page === '' ? 1.0 : page === '/services' ? 0.9 : 0.8,
     }))
   );

@@ -199,7 +199,7 @@ This email was sent from the contact form on h-remodeling.com
       console.log('Email would be sent:', {
         to: 'hremodeling05@gmail.com',
         subject: emailSubject,
-        body: emailBody,
+        body: emailText,
       });
       
       return NextResponse.json(
