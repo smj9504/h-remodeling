@@ -24,15 +24,6 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
   },
-  alternates: {
-    canonical: BASE_URL,
-    languages: {
-      'en': `${BASE_URL}/en`,
-      'zh': `${BASE_URL}/zh`,
-      'ko': `${BASE_URL}/ko`,
-      'x-default': `${BASE_URL}/en`,
-    },
-  },
   openGraph: {
     title: 'H Remodeling | Quality Remodeling in DMV Area',
     description: 'Transform your home with H Remodeling. Expert kitchen, bathroom, flooring, and deck services.',
@@ -144,10 +135,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/en`} />
-        <link rel="alternate" hrefLang="zh" href={`${BASE_URL}/zh`} />
-        <link rel="alternate" hrefLang="ko" href={`${BASE_URL}/ko`} />
-        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/en`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

@@ -40,6 +40,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  const BASE_URL = 'https://h-remodeling.com';
+
   // Safely get title with fallback
   let title: string;
   try {
@@ -51,6 +53,18 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: `${title} | H Remodeling`,
     description: t.has(`${slug}.description`) ? t(`${slug}.description`) : undefined,
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/projects/${slug}`,
+      languages: {
+        'en': `${BASE_URL}/en/projects/${slug}`,
+        'zh': `${BASE_URL}/zh/projects/${slug}`,
+        'ko': `${BASE_URL}/ko/projects/${slug}`,
+        'x-default': `${BASE_URL}/en/projects/${slug}`,
+      },
+    },
+    openGraph: {
+      url: `${BASE_URL}/${locale}/projects/${slug}`,
+    },
   };
 }
 

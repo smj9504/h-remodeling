@@ -12,9 +12,24 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'services' });
+
+  const BASE_URL = 'https://h-remodeling.com';
+
   return {
     title: `${t('title')} | H Remodeling`,
     description: t('description'),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        'en': `${BASE_URL}/en`,
+        'zh': `${BASE_URL}/zh`,
+        'ko': `${BASE_URL}/ko`,
+        'x-default': `${BASE_URL}/en`,
+      },
+    },
+    openGraph: {
+      url: `${BASE_URL}/${locale}`,
+    },
   };
 }
 
