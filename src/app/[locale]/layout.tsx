@@ -106,7 +106,13 @@ const structuredData = {
       closes: '17:00',
     },
   ],
-  sameAs: [],
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61584490866793',
+    'https://www.instagram.com/hremodeling05',
+  ],
+  currenciesAccepted: 'USD',
+  foundingDate: '2014',
+  slogan: 'Quality Remodeling in Virginia & Maryland',
 };
 
 export function generateStaticParams() {
