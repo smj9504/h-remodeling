@@ -11,13 +11,26 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'services' });
+  const t = await getTranslations({ locale, namespace: 'hero' });
 
   const BASE_URL = 'https://h-remodeling.com';
 
+  const titles: Record<string, string> = {
+    en: 'H Remodeling | Kitchen, Bathroom, Flooring & Deck Experts in MD & VA',
+    zh: 'H Remodeling | 马里兰州和弗吉尼亚州厨房、浴室、地板和甲板专家',
+    ko: 'H Remodeling | MD & VA 지역 주방, 욕실, 바닥재, 데크 전문',
+  };
+
+  const descriptions: Record<string, string> = {
+    en: 'Quality kitchen remodeling, bathroom renovation, flooring installation, and deck building services in Maryland and Northern Virginia. 10+ years experience, 500+ projects completed. Get your free quote today!',
+    zh: '在马里兰州和北弗吉尼亚州提供优质的厨房改造、浴室翻新、地板安装和甲板建造服务。10年以上经验，完成500多个项目。立即获取免费报价！',
+    ko: '메릴랜드와 북부 버지니아에서 고품질 주방 리모델링, 욕실 리노베이션, 바닥재 설치 및 데크 시공 서비스를 제공합니다. 10년 이상의 경험, 500개 이상의 프로젝트 완료. 지금 무료 견적을 받아보세요!',
+  };
+
   return {
-    title: `${t('title')} | H Remodeling`,
-    description: t('description'),
+    title: titles[locale] || titles.en,
+    description: descriptions[locale] || descriptions.en,
+    keywords: 'kitchen remodel Maryland, bathroom remodel Virginia, flooring installation DMV, deck building MD VA, home renovation Bethesda, kitchen cabinets Arlington, bathroom renovation McLean, hardwood floors Alexandria',
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: {
@@ -28,7 +41,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       },
     },
     openGraph: {
+      title: titles[locale] || titles.en,
+      description: descriptions[locale] || descriptions.en,
+      type: 'website',
       url: `${BASE_URL}/${locale}`,
+      siteName: 'H Remodeling',
+      images: [{
+        url: `${BASE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'H Remodeling - Kitchen, Bathroom, Flooring & Deck Experts',
+      }],
     },
   };
 }

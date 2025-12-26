@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { routing } from '@/i18n/routing';
 import { IMAGES } from '@/data/images';
+import { generateBreadcrumbSchemaWithLabels } from '@/lib/schema/breadcrumb';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -74,6 +75,12 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
   const t = await getTranslations('services');
   const tCta = await getTranslations('cta');
 
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = generateBreadcrumbSchemaWithLabels(
+    locale,
+    [{ path: '/services', label: t('title') }]
+  );
+
   // Service Schema for SEO
   const servicesSchema = {
     '@context': 'https://schema.org',
@@ -109,6 +116,10 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
   return (
     <div className="pt-20">
       {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}

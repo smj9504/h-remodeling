@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Award, Users, Clock, Shield } from 'lucide-react';
 import { routing } from '@/i18n/routing';
 import { IMAGES } from '@/data/images';
+import { generateBreadcrumbSchemaWithLabels } from '@/lib/schema/breadcrumb';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -36,9 +37,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  
+
   const t = await getTranslations('about');
   const tCta = await getTranslations('cta');
+
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = generateBreadcrumbSchemaWithLabels(
+    locale,
+    [{ path: '/about', label: t('title') }]
+  );
 
   const values = [
     {
@@ -60,6 +67,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   return (
     <div className="pt-20">
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

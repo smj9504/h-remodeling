@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import ContactClient from './ContactClient';
+import { generateBreadcrumbSchemaWithLabels } from '@/lib/schema/breadcrumb';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -72,5 +73,19 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
     ],
   };
 
-  return <ContactClient locale={locale} translations={translations} />;
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = generateBreadcrumbSchemaWithLabels(
+    locale,
+    [{ path: '/contact', label: t('title') }]
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <ContactClient locale={locale} translations={translations} />
+    </>
+  );
 }
