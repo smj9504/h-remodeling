@@ -232,6 +232,9 @@
       "title": "SNS 팔로우",
       "instagram": "인스타그램",
       "facebook": "페이스북"
+    },
+    "faq": {
+      "title": "자주 묻는 질문"
     }
   },
   "cta": {

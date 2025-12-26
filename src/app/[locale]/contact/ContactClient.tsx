@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Phone, Mail, Clock, MapPin, Instagram, Facebook, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Instagram, Facebook, Send, CheckCircle, ChevronDown } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -39,7 +39,11 @@ interface Translations {
   social: {
     title: string;
   };
+  faq: {
+    title: string;
+  };
   services: { value: string; label: string }[];
+  faqs: Array<{ question: string; answer: string }>;
 }
 
 interface ContactClientProps {
@@ -51,6 +55,7 @@ export default function ContactClient({ locale, translations: t }: ContactClient
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const {
     register,
@@ -339,6 +344,51 @@ export default function ContactClient({ locale, translations: t }: ContactClient
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-neutral-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-neutral-900">
+              {t.faq.title}
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {t.faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white border border-neutral-200 overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-neutral-50 transition-colors"
+                >
+                  <h3 className="text-lg font-semibold text-neutral-900 pr-8">
+                    {faq.question}
+                  </h3>
+                  <ChevronDown
+                    className={`w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-200 ${
+                      openFaqIndex === index ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-200 ${
+                    openFaqIndex === index ? 'max-h-96' : 'max-h-0'
+                  }`}
+                >
+                  <div className="px-6 pb-5 pt-2">
+                    <p className="text-neutral-600 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

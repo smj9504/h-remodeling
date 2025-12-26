@@ -149,12 +149,16 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
     social: {
       title: t('social.title'),
     },
+    faq: {
+      title: t('faq.title'),
+    },
     services: [
       { value: 'kitchen', label: tServices('kitchen.title') },
       { value: 'bathroom', label: tServices('bathroom.title') },
       { value: 'flooring', label: tServices('flooring.title') },
       { value: 'decking', label: tServices('decking.title') },
     ],
+    faqs: faqData[locale] || faqData.en,
   };
 
   // BreadcrumbList Schema for SEO
