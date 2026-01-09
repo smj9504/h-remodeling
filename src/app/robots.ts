@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://h-remodeling.com/sitemap.xml',
+    sitemap: 'https://www.h-remodeling.com/sitemap.xml',
   };
 }
 

@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'about' });
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   return {
-    title: `${t('title')} | H Remodeling`,
-    description: t('description'),
+    title: `About H Remodeling | 10+ Years, 500+ Projects in Maryland & Virginia`,
+    description: `⭐ Meet H Remodeling - Licensed & insured remodeling experts serving MD & VA since 2014. 500+ successful kitchen, bathroom, flooring & deck projects. See why homeowners trust us!`,
     alternates: {
       canonical: `${BASE_URL}/${locale}/about`,
       languages: {

@@ -125,7 +125,7 @@ ${message}
             <td style="background-color: #faf8f5; padding: 25px 30px; border-top: 1px solid #e5dccb; text-align: center;">
               <p style="margin: 0; color: #715845; font-size: 13px; line-height: 1.5;">
                 This email was sent from the contact form on<br>
-                <a href="https://h-remodeling.com" style="color: #b3936b; text-decoration: none; font-weight: 600;">h-remodeling.com</a>
+                <a href="https://www.h-remodeling.com" style="color: #b3936b; text-decoration: none; font-weight: 600;">www.h-remodeling.com</a>
               </p>
               <p style="margin: 12px 0 0 0; color: #8a6a50; font-size: 11px;">
                 © ${new Date().getFullYear()} H Remodeling. All rights reserved.
@@ -154,7 +154,7 @@ Message:
 ${message}
 
 ---
-This email was sent from the contact form on h-remodeling.com
+This email was sent from the contact form on www.h-remodeling.com
     `.trim();
 
     // Gmail SMTP configuration

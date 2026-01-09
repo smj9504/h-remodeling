@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'projects' });
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   return {
-    title: `${t('title')} | H Remodeling`,
-    description: t('description'),
+    title: `500+ Before & After Photos | Kitchen & Bathroom Remodeling MD VA`,
+    description: `⭐ See 500+ completed projects! Kitchen remodels, bathroom renovations, flooring & decks in Bethesda, Arlington, McLean. Real before/after photos from Maryland & Virginia homeowners.`,
     alternates: {
       canonical: `${BASE_URL}/${locale}/projects`,
       languages: {

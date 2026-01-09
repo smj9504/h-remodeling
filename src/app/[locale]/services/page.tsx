@@ -14,23 +14,24 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'services' });
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   return {
-    title: `${t('title')} - Kitchen, Bathroom, Flooring, Deck | H Remodeling DMV`,
-    description: `${t('description')} Expert services in Maryland, Virginia, and Washington D.C. - Kitchen remodeling, bathroom renovation, flooring installation, and deck building.`,
-    keywords: 'kitchen remodel DMV, bathroom renovation Maryland, flooring Virginia, deck building DC, kitchen cabinets Bethesda, bathroom remodel Arlington, hardwood floors McLean, composite deck Alexandria',
+    title: `Kitchen, Bathroom, Flooring & Deck Services MD & VA | ⭐ Licensed Contractor`,
+    description: `⭐ 4.9/5 Rating! Professional kitchen remodeling, bathroom renovation, flooring installation & deck building in Maryland & Virginia. Serving Bethesda, Arlington, McLean, Alexandria. FREE estimates - Call (703) 585-9517`,
+    keywords: 'kitchen remodeling Bethesda, bathroom renovation Arlington, flooring contractor McLean, deck builder Alexandria, kitchen cabinets Rockville, bathroom remodel Silver Spring, hardwood floors Maryland, deck installation Virginia',
     alternates: {
       canonical: `${BASE_URL}/${locale}/services`,
       languages: {
         'en': `${BASE_URL}/en/services`,
         'zh': `${BASE_URL}/zh/services`,
         'ko': `${BASE_URL}/ko/services`,
+        'x-default': `${BASE_URL}/en/services`,
       },
     },
     openGraph: {
-      title: `${t('title')} | H Remodeling DMV`,
-      description: `${t('description')} Serving Maryland, Virginia, and Washington D.C.`,
+      title: `Kitchen, Bathroom, Flooring & Deck Services | Licensed MD & VA Contractor`,
+      description: `⭐ 4.9/5 Rating! Professional remodeling services in Maryland & Virginia. FREE estimates!`,
       type: 'website',
       url: `${BASE_URL}/${locale}/services`,
       images: [
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           url: `${BASE_URL}/og-image.png`,
           width: 1200,
           height: 630,
-          alt: 'H Remodeling Services - Kitchen, Bathroom, Flooring, Deck',
+          alt: 'H Remodeling Services - Kitchen, Bathroom, Flooring, Deck Experts in Maryland & Virginia',
         },
       ],
     },
@@ -94,7 +95,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         provider: {
           '@type': 'LocalBusiness',
           name: 'H Remodeling',
-          '@id': 'https://h-remodeling.com',
+          '@id': 'https://www.h-remodeling.com',
         },
         description: t(`${service.id}.description`),
         areaServed: [
@@ -104,7 +105,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         ],
         serviceType: `${service.id.charAt(0).toUpperCase() + service.id.slice(1)} Remodeling`,
         image: service.image,
-        url: `https://h-remodeling.com/${locale}/services#${service.id}`,
+        url: `https://www.h-remodeling.com/${locale}/services#${service.id}`,
         offers: {
           '@type': 'Offer',
           availability: 'https://schema.org/InStock',

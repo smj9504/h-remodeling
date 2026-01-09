@@ -13,18 +13,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'hero' });
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   const titles: Record<string, string> = {
-    en: 'H Remodeling | Kitchen, Bathroom, Flooring & Deck Experts in MD & VA',
-    zh: 'H Remodeling | 马里兰州和弗吉尼亚州厨房、浴室、地板和甲板专家',
-    ko: 'H Remodeling | MD & VA 지역 주방, 욕실, 바닥재, 데크 전문',
+    en: 'Kitchen & Bathroom Remodeling Maryland & Virginia | ⭐ 4.9 Rating | Free Quote',
+    zh: '马里兰和弗吉尼亚州厨房浴室改造 | ⭐ 4.9评分 | 免费报价',
+    ko: '메릴랜드 & 버지니아 주방 욕실 리모델링 | ⭐ 4.9 평점 | 무료 견적',
   };
 
   const descriptions: Record<string, string> = {
-    en: 'Quality kitchen remodeling, bathroom renovation, flooring installation, and deck building services in Maryland and Northern Virginia. 10+ years experience, 500+ projects completed. Get your free quote today!',
-    zh: '在马里兰州和北弗吉尼亚州提供优质的厨房改造、浴室翻新、地板安装和甲板建造服务。10年以上经验，完成500多个项目。立即获取免费报价！',
-    ko: '메릴랜드와 북부 버지니아에서 고품질 주방 리모델링, 욕실 리노베이션, 바닥재 설치 및 데크 시공 서비스를 제공합니다. 10년 이상의 경험, 500개 이상의 프로젝트 완료. 지금 무료 견적을 받아보세요!',
+    en: '⭐ 4.9/5 Rating, 500+ Projects! Licensed kitchen remodeling, bathroom renovation, flooring & deck experts in Bethesda, Arlington, McLean. 10+ years experience. Call (703) 585-9517 for FREE estimate!',
+    zh: '⭐ 4.9/5评分，500多个项目！Bethesda、Arlington、McLean地区持证厨房改造、浴室翻新、地板和甲板专家。10年以上经验。致电 (703) 585-9517 获取免费报价！',
+    ko: '⭐ 4.9/5 평점, 500개 이상의 프로젝트! Bethesda, Arlington, McLean 지역 면허 보유 주방 리모델링, 욕실 리노베이션, 바닥재 및 데크 전문가. 10년 이상의 경험. (703) 585-9517로 무료 견적 문의!',
   };
 
   return {
@@ -82,22 +82,94 @@ const servicesData = [
 export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  
+
+  const tHero = await getTranslations('hero');
   const t = await getTranslations('services');
   const tCta = await getTranslations('cta');
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-neutral-50">
+      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            {/* H1 Headline with Location Keywords */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+              {tHero('title')}
+            </h1>
+
+            {/* Subheadline */}
+            <p className="text-xl sm:text-2xl text-neutral-300 mb-8 leading-relaxed">
+              {tHero('subtitle')}
+            </p>
+
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 mb-10 max-w-2xl">
+              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
+                  {tHero('stats.years')}
+                </div>
+                <div className="text-xs sm:text-sm text-neutral-400">
+                  {tHero('stats.yearsLabel')}
+                </div>
+              </div>
+              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
+                  {tHero('stats.projects')}
+                </div>
+                <div className="text-xs sm:text-sm text-neutral-400">
+                  {tHero('stats.projectsLabel')}
+                </div>
+              </div>
+              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
+                  {tHero('stats.consultation')}
+                </div>
+                <div className="text-xs sm:text-sm text-neutral-400">
+                  {tHero('stats.consultationLabel')}
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href={`/${locale}/contact`}
+                className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                {tHero('cta.quote')}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+              <Link
+                href={`/${locale}/projects`}
+                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-semibold text-lg hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-200"
+              >
+                {tHero('cta.projects')}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl text-center mx-auto mb-16">
             <p className="text-primary-600 font-medium tracking-wider uppercase mb-3">
               {t('subtitle')}
             </p>
-            <h1 className="text-4xl sm:text-5xl font-display font-bold text-neutral-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-neutral-900 mb-6">
               {t('title')}
-            </h1>
+            </h2>
             <p className="text-lg text-neutral-600">
               {t('description')}
             </p>

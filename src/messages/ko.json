@@ -8,12 +8,20 @@
     "getQuote": "무료 견적"
   },
   "hero": {
-    "subtitle": "공간을 새롭게",
-    "title": "프리미엄 리모델링",
-    "titleHighlight": "버지니아 & 메릴랜드",
-    "description": "H Remodeling은 버지니아와 메릴랜드 전역에서 최고 품질의 주방, 욕실, 바닥재, 데크 리모델링을 제공합니다.",
-    "cta": "시공 사례 보기",
-    "ctaSecondary": "문의하기"
+    "title": "버지니아 & 메릴랜드 최고의 홈 리모델링",
+    "subtitle": "전문 장인의 손길로 집을 변화시키세요. DMV 지역 주방, 욕실, 바닥재, 데크 전문업체입니다.",
+    "cta": {
+      "quote": "무료 견적 받기",
+      "projects": "시공 사례 보기"
+    },
+    "stats": {
+      "years": "10년+",
+      "yearsLabel": "경력",
+      "projects": "500+",
+      "projectsLabel": "완료 프로젝트",
+      "consultation": "무료",
+      "consultationLabel": "상담"
+    }
   },
   "services": {
     "title": "서비스 안내",

@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   // Safely get title with fallback
   let title: string;
@@ -112,7 +112,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
     creator: {
       '@type': 'Organization',
       name: 'H Remodeling',
-      '@id': 'https://h-remodeling.com',
+      '@id': 'https://www.h-remodeling.com',
     },
     image: project.images.map((img) => ({
       '@type': 'ImageObject',
@@ -130,7 +130,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       },
     },
     keywords: `${project.category} remodeling, ${project.location}, H Remodeling`,
-    url: `https://h-remodeling.com/${locale}/projects/${slug}`,
+    url: `https://www.h-remodeling.com/${locale}/projects/${slug}`,
   };
 
   // BreadcrumbList Schema for SEO

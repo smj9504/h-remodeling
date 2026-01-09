@@ -8,12 +8,20 @@
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "subtitle": "Transform Your Space",
-    "title": "Quality Remodeling",
-    "titleHighlight": "in Virginia & Maryland",
-    "description": "H Remodeling delivers exceptional kitchen, bathroom, flooring, and deck renovations across Virginia and Maryland.",
-    "cta": "View Our Work",
-    "ctaSecondary": "Contact Us"
+    "title": "Quality Home Remodeling in Virginia & Maryland",
+    "subtitle": "Transform your home with expert craftsmanship. Kitchen, bathroom, flooring, and deck specialists serving the DMV area.",
+    "cta": {
+      "quote": "Get Free Quote",
+      "projects": "View Our Work"
+    },
+    "stats": {
+      "years": "10+ Years",
+      "yearsLabel": "Experience",
+      "projects": "500+",
+      "projectsLabel": "Projects Completed",
+      "consultation": "Free",
+      "consultationLabel": "Consultation"
+    }
   },
   "services": {
     "title": "Our Services",

@@ -8,12 +8,20 @@
     "getQuote": "免费估价"
   },
   "hero": {
-    "subtitle": "改造您的空间",
-    "title": "优质装修服务",
-    "titleHighlight": "弗吉尼亚和马里兰",
-    "description": "H Remodeling 在弗吉尼亚州和马里兰州提供卓越的厨房、浴室、地板和露台装修服务。",
-    "cta": "查看案例",
-    "ctaSecondary": "联系我们"
+    "title": "弗吉尼亚和马里兰州优质家居改造",
+    "subtitle": "以专业工艺改造您的家。厨房、浴室、地板和甲板专家，服务DMV地区。",
+    "cta": {
+      "quote": "获取免费报价",
+      "projects": "查看我们的作品"
+    },
+    "stats": {
+      "years": "10+年",
+      "yearsLabel": "经验",
+      "projects": "500+",
+      "projectsLabel": "完成项目",
+      "consultation": "免费",
+      "consultationLabel": "咨询"
+    }
   },
   "services": {
     "title": "我们的服务",

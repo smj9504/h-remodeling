@@ -2,13 +2,13 @@
  * Generate BreadcrumbList Schema for SEO
  * @param locale - Current locale (en, zh, ko)
  * @param path - Array of path segments (e.g., ['projects', 'modern-kitchen-bethesda'])
- * @param baseUrl - Base URL of the website (default: https://h-remodeling.com)
+ * @param baseUrl - Base URL of the website (default: https://www.h-remodeling.com)
  * @returns Schema.org BreadcrumbList JSON-LD object
  */
 export function generateBreadcrumbSchema(
   locale: string,
   path: string[],
-  baseUrl: string = 'https://h-remodeling.com'
+  baseUrl: string = 'https://www.h-remodeling.com'
 ) {
   const items = [
     {
@@ -47,7 +47,7 @@ export function generateBreadcrumbSchema(
 export function generateBreadcrumbSchemaWithLabels(
   locale: string,
   items: Array<{ path: string; label: string }>,
-  baseUrl: string = 'https://h-remodeling.com'
+  baseUrl: string = 'https://www.h-remodeling.com'
 ) {
   const breadcrumbItems = [
     {

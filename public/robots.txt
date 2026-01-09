@@ -1,0 +1,13 @@
+# H Remodeling - Robots.txt
+# Multilingual remodeling services website (EN, ZH, KO)
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow private/system paths
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap location
+Sitemap: https://www.h-remodeling.com/sitemap.xml

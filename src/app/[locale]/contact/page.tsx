@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'contact' });
 
-  const BASE_URL = 'https://h-remodeling.com';
+  const BASE_URL = 'https://www.h-remodeling.com';
 
   return {
-    title: `${t('title')} | H Remodeling`,
-    description: t('description'),
+    title: `Get FREE Quote | Kitchen & Bathroom Remodeling Maryland Virginia`,
+    description: `⭐ Request your FREE estimate today! Call (703) 585-9517 or fill out our form. Kitchen remodeling, bathroom renovation, flooring & deck services in MD & VA. Fast response guaranteed!`,
     alternates: {
       canonical: `${BASE_URL}/${locale}/contact`,
       languages: {
