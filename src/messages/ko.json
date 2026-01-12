@@ -8,19 +8,19 @@
     "getQuote": "무료 견적"
   },
   "hero": {
-    "title": "버지니아 & 메릴랜드 최고의 홈 리모델링",
-    "subtitle": "전문 장인의 손길로 집을 변화시키세요. DMV 지역 주방, 욕실, 바닥재, 데크 전문업체입니다.",
+    "title": "믿을 수 있는 자재, 투명한 견적, 정직한 시공",
+    "subtitle": "주방 · 욕실 · 바닥재 · 데크 | 중간 마진 없는 합리적인 가격으로 버지니아 & 메릴랜드 리모델링",
     "cta": {
-      "quote": "무료 견적 받기",
-      "projects": "시공 사례 보기"
+      "quote": "무료 상담 신청",
+      "projects": "시공 사례"
     },
     "stats": {
       "years": "10년+",
-      "yearsLabel": "경력",
+      "yearsLabel": "시공 경력",
       "projects": "500+",
-      "projectsLabel": "완료 프로젝트",
+      "projectsLabel": "시공 실적",
       "consultation": "무료",
-      "consultationLabel": "상담"
+      "consultationLabel": "현장 상담"
     }
   },
   "services": {

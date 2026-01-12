@@ -8,19 +8,19 @@
     "getQuote": "免费估价"
   },
   "hero": {
-    "title": "弗吉尼亚和马里兰州优质家居改造",
-    "subtitle": "以专业工艺改造您的家。厨房、浴室、地板和甲板专家，服务DMV地区。",
+    "title": "可靠材料 · 透明报价 · 诚信施工",
+    "subtitle": "厨房 · 浴室 · 地板 · 露台 | 无中间差价，弗吉尼亚和马里兰州专业装修",
     "cta": {
-      "quote": "获取免费报价",
-      "projects": "查看我们的作品"
+      "quote": "免费咨询",
+      "projects": "施工案例"
     },
     "stats": {
       "years": "10+年",
-      "yearsLabel": "经验",
+      "yearsLabel": "施工经验",
       "projects": "500+",
-      "projectsLabel": "完成项目",
+      "projectsLabel": "项目实绩",
       "consultation": "免费",
-      "consultationLabel": "咨询"
+      "consultationLabel": "现场咨询"
     }
   },
   "services": {

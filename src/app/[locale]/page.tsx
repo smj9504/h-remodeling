@@ -90,13 +90,18 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src={IMAGES.hero.home}
+            alt="Home remodeling"
+            fill
+            priority
+            className="object-cover"
+          />
+          {/* Dark Overlay for text readability */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

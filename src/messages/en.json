@@ -8,19 +8,19 @@
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "title": "Quality Home Remodeling in Virginia & Maryland",
-    "subtitle": "Transform your home with expert craftsmanship. Kitchen, bathroom, flooring, and deck specialists serving the DMV area.",
+    "title": "Quality Materials. Honest Pricing. Expert Craftsmanship.",
+    "subtitle": "Kitchen · Bathroom · Flooring · Deck | Fair prices with no middleman markup in Virginia & Maryland",
     "cta": {
-      "quote": "Get Free Quote",
-      "projects": "View Our Work"
+      "quote": "Free Consultation",
+      "projects": "Our Work"
     },
     "stats": {
       "years": "10+ Years",
       "yearsLabel": "Experience",
       "projects": "500+",
-      "projectsLabel": "Projects Completed",
+      "projectsLabel": "Projects Done",
       "consultation": "Free",
-      "consultationLabel": "Consultation"
+      "consultationLabel": "On-Site Visit"
     }
   },
   "services": {
