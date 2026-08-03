@@ -5,45 +5,59 @@
     "services": "서비스",
     "projects": "프로젝트",
     "contact": "문의하기",
-    "getQuote": "무료 견적"
+    "getQuote": "무료 현장 방문 예약"
   },
   "hero": {
-    "title": "믿을 수 있는 자재, 투명한 견적, 정직한 시공",
-    "subtitle": "주방 · 욕실 · 바닥재 · 데크 | 중간 마진 없는 합리적인 가격으로 버지니아 & 메릴랜드 리모델링",
+    "title": "중간업자 없이, 마진 없이, 정직한 시공만.",
+    "subtitle": "메릴랜드와 북버지니아 면허 보유 주방, 욕실, 바닥재, 데크 전문 시공업체. 직접 시공하기에 합리적인 가격이 가능합니다.",
+    "languageBadge": "한국어, 中文, English 상담 가능",
     "cta": {
-      "quote": "무료 상담 신청",
-      "projects": "시공 사례"
+      "quote": "무료 현장 방문 예약",
+      "projects": "시공 사례 보기"
     },
     "stats": {
-      "years": "10년+",
-      "yearsLabel": "시공 경력",
-      "projects": "500+",
-      "projectsLabel": "시공 실적",
-      "consultation": "무료",
-      "consultationLabel": "현장 상담"
+      "yearsEnd": "10",
+      "yearsSuffix": "+",
+      "yearsLabel": "년 경력",
+      "projectsEnd": "500",
+      "projectsSuffix": "+",
+      "projectsLabel": "시공 완료",
+      "ratingEnd": "4.9",
+      "ratingSuffix": "/5",
+      "ratingLabel": "고객 평점",
+      "source": "Google 리뷰 기준"
     }
   },
   "services": {
     "title": "서비스 안내",
     "subtitle": "전문 분야",
-    "description": "Maryland(메릴랜드)와 Northern Virginia(북버지니아) 전역의 주택 소유자들에게 최고 품질의 리모델링 서비스를 제공합니다. 존중과 세심한 계획, 따뜻하고 개인화된 접근으로 서비스를 제공합니다. 집은 단순한 구조물이 아니라 가족이 모이고, 추억을 만들며, 삶이 펼쳐지는 공간입니다.",
+    "description": "메릴랜드와 북버지니아 전역에서 주방, 욕실, 바닥재, 데크 시공을 제공합니다. 하청 없이 직접 시공하며, 중간 마진 없는 투명한 가격과 시공팀과의 직접 소통을 약속합니다.",
     "kitchen": {
-      "title": "주방 리모델링 - 메릴랜드 & 북버지니아",
-      "description": "H Remodeling과 함께 주방을 새롭게 변신시키세요. Maryland(메릴랜드)와 Northern Virginia(북버지니아) 전역에서 맞춤형 캐비닛, 쿼츠 및 화강암 카운터탑, 주방 아일랜드, 최신 가전제품, 백스플래시 타일, 조명 디자인을 포함한 완벽한 주방 리노베이션을 제공합니다."
+      "title": "가족을 위한 주방 리모델링",
+      "description": "메릴랜드와 북버지니아 전역에서 주방 전체 리노베이션을 제공합니다. 맞춤형 캐비닛, 쿼츠 및 화강암 카운터탑, 아일랜드, 최신 가전, 백스플래시 타일, 조명까지 — 저희 팀이 직접 시공합니다.",
+      "features": ["맞춤형 캐비닛", "쿼츠 & 화강암 카운터탑", "주방 아일랜드", "최신 가전", "백스플래시 타일", "조명 디자인"],
+      "imageAlt": "맞춤형 그레이 캐비닛과 쿼츠 아일랜드 카운터탑이 있는 완성된 주방"
     },
     "bathroom": {
-      "title": "욕실 리모델링 - 메릴랜드 & 북버지니아",
-      "description": "Maryland(메릴랜드)와 Northern Virginia(북버지니아) 전역에서 고급스러운 욕실 리모델링 서비스를 제공합니다. 워크인 샤워, 독립형 욕조, 맞춤 세면대, 바닥 난방, 타일 시공, 현대적인 욕실 설비까지 - 여러분의 집에 스파와 같은 욕실을 만들어 드립니다."
+      "title": "매일 돌아오고 싶은 욕실",
+      "description": "워크인 샤워, 독립형 욕조, 맞춤 세면대, 바닥 난방, 타일 시공, 현대적 설비. 메릴랜드와 북버지니아 주택에 스파급 욕실을 만들어 드립니다.",
+      "features": ["워크인 샤워", "독립형 욕조", "맞춤 세면대", "바닥 난방", "타일 시공", "현대적 설비"],
+      "imageAlt": "워크인 샤워, 맞춤 세면대, 바닥 난방 타일이 있는 모던 욕실"
     },
     "flooring": {
-      "title": "바닥재 시공 - 메릴랜드 & 북버지니아",
-      "description": "Maryland(메릴랜드)와 Northern Virginia(북버지니아) 지역 주택을 위한 프리미엄 바닥재 설치 서비스. 원목 마루, 럭셔리 비닐 플랭크(LVP), 타일 및 석재, 카펫, 에폭시 바닥재, 라미네이트 바닥재 전문 시공 및 하부 바닥 수리 서비스를 제공합니다."
+      "title": "일상을 견디는 바닥재",
+      "description": "원목, LVP, 타일 및 석재, 카펫, 에폭시, 라미네이트 — 하부 바닥 수리까지. 메릴랜드와 북버지니아에서 오래 아름답게 유지되는 바닥재를 시공합니다.",
+      "features": ["원목 바닥재", "LVP (럭셔리 비닐 플랭크)", "타일 & 석재", "카펫", "라미네이트", "하부 바닥 수리"],
+      "imageAlt": "오픈 거실에 시공된 와이드 플랭크 원목 바닥재"
     },
     "decking": {
-      "title": "데크 시공 및 수리 - 메릴랜드 & 북버지니아",
-      "description": "Maryland(메릴랜드)와 Northern Virginia(북버지니아)를 대상으로 맞춤형 데크 시공 및 수리 서비스를 제공합니다. 컴포지트 데크, 원목 데크, 난간, 퍼걸라, 야외 조명 전문 설치로 아름다운 야외 생활 공간을 만들어 드립니다."
+      "title": "야외 공간에 가치를 더하는 데크",
+      "description": "컴포지트 및 원목 데크, 난간, 퍼걸라, 야외 조명. 메릴랜드와 북버지니아에서 실제 생활 방식에 맞춘 데크를 시공하고 수리합니다.",
+      "features": ["컴포지트 데킹", "원목 데킹", "데크 난간", "퍼걸라", "야외 조명", "데크 수리"],
+      "imageAlt": "내장 LED 조명과 다층 구조의 컴포지트 데크"
     },
-    "learnMore": "자세히 보기"
+    "learnMore": "무료 현장 방문 예약",
+    "seeWork": "시공 사례 보기"
   },
   "projects": {
     "title": "시공 사례",
@@ -185,6 +199,28 @@
       "description": "세련된 다크 브라운 컴포지트 데킹이 모던하고 세련된 루프탑 휴식 공간을 만들어냅니다. 저관리 소재와 깔끔한 라인이 도시 야외 공간을 스타일리시하면서도 도시 생활에 실용적으로 만들어줍니다."
     }
   },
+  "testimonials": {
+    "title": "고객 후기",
+    "subtitle": "실제 리뷰",
+    "googleCta": "Google에서 더 많은 리뷰 보기",
+    "reviews": {
+      "1": {
+        "name": "Jennifer L.",
+        "location": "원목 바닥재 시공 — McLean, VA",
+        "text": "집 전체에 아름다운 원목 마루를 시공했습니다. 공간을 존중해 주었고 장인 정신이 돋보입니다. 투명한 가격에 추가 비용 없이 깔끔했습니다."
+      },
+      "2": {
+        "name": "Sarah M.",
+        "location": "주방 리모델링 — Bethesda, MD",
+        "text": "H Remodeling이 저희 주방을 상상 이상으로 변신시켰습니다. 팀이 전문적이고 시간을 잘 지켰으며, 시공 품질이 뛰어납니다. 강력 추천합니다!"
+      },
+      "3": {
+        "name": "Michael T.",
+        "location": "욕실 리노베이션 — Arlington, VA",
+        "text": "욕실 리노베이션을 세심하게 진행해 주었습니다. 매 단계마다 소통해 주고 일정에 맞춰 완료했습니다. 결과물은 스파 같은 공간입니다."
+      }
+    }
+  },
   "about": {
     "title": "회사 소개",
     "subtitle": "H Remodeling",
@@ -215,7 +251,7 @@
   "contact": {
     "title": "문의하기",
     "subtitle": "연락처",
-    "description": "리모델링 프로젝트를 시작할 준비가 되셨나요? 무료 상담 및 견적을 받아보세요.",
+    "description": "리모델링 프로젝트를 시작할 준비가 되셨나요? 무료 방문 예약하고 명확한 서면 견적을 받아보세요.",
     "form": {
       "name": "이름",
       "email": "이메일",
@@ -225,8 +261,32 @@
       "message": "프로젝트에 대해 알려주세요",
       "submit": "메시지 보내기",
       "sending": "전송 중...",
-      "success": "감사합니다! 곧 연락드리겠습니다.",
-      "error": "문제가 발생했습니다. 다시 시도해 주세요."
+      "success": "요청이 접수되었습니다.",
+      "successDetail": "영업일 기준 하루 이내에 전화드려 무료 방문 일정을 잡아드리겠습니다.",
+      "successCta": "지금 전화하기",
+      "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+      "reassurance": "부담 없이, 의무 없이. 24시간 이내에 답변드립니다.",
+      "phoneHint": "방문 일정을 잡기 위해 전화드립니다.",
+      "messagePlaceholder": "어떤 공간을 리모델링하시나요? 일정이나 예산 범위가 있으신가요?",
+      "nameRequired": "이름을 입력해 주세요.",
+      "nameMaxLength": "이름은 100자 이내로 입력해 주세요.",
+      "phoneRequired": "전화번호를 입력해 주세요.",
+      "phoneInvalid": "올바른 전화번호를 입력해 주세요.",
+      "emailInvalid": "올바른 이메일 주소를 입력해 주세요.",
+      "serviceRequired": "서비스를 선택해 주세요.",
+      "messageRequired": "프로젝트에 대해 알려주세요.",
+      "messageMaxLength": "메시지는 2000자 이내로 입력해 주세요.",
+      "networkError": "연결할 수 없습니다. 인터넷 연결을 확인하고 다시 시도해 주세요."
+    },
+    "sidebar": {
+      "contactInfo": "연락처 정보",
+      "serviceAreas": "서비스 지역",
+      "maryland": "메릴랜드",
+      "virginia": "버지니아",
+      "dc": "D.C.",
+      "marylandAreas": "Bethesda, Rockville, Silver Spring, Potomac, Chevy Chase",
+      "virginiaAreas": "Arlington, McLean, Tysons, Fairfax, Falls Church",
+      "dcAreas": "Georgetown, Capitol Hill, Dupont Circle"
     },
     "info": {
       "phone": "전화",
@@ -234,7 +294,7 @@
       "hours": "영업 시간",
       "hoursValue": "월 - 토: 오전 8시 - 오후 6시",
       "area": "서비스 지역",
-      "areaValue": "버지니아, 메릴랜드"
+      "areaValue": "버지니아, 메릴랜드 & D.C."
     },
     "social": {
       "title": "SNS 팔로우",
@@ -246,16 +306,16 @@
     }
   },
   "cta": {
-    "title": "집을 새롭게 바꿀 준비가 되셨나요?",
-    "description": "지금 무료 상담 및 견적을 요청하세요.",
-    "button": "상담 시작"
+    "title": "예산 안에서, 놀라운 변화를.",
+    "description": "집을 방문하여 프로젝트를 함께 검토하고, 명확한 서면 견적을 드립니다 — 부담 없이, 의무 없이.",
+    "button": "무료 현장 방문 예약"
   },
   "footer": {
-    "description": "버지니아와 메릴랜드 프리미엄 리모델링 서비스. 주방, 욕실, 바닥재, 데크 전문.",
+    "description": "2014년부터 면허와 보험을 갖추고 직접 시공하는 DMV 지역 주방, 욕실, 바닥재, 데크 전문 업체.",
     "quickLinks": "바로가기",
     "services": "서비스",
     "contact": "연락처",
-    "copyright": "© 2024 H Remodeling. All rights reserved.",
-    "servingArea": "버지니아와 메릴랜드 지역 서비스"
+    "copyright": "© 2026 H Remodeling. All rights reserved.",
+    "servingArea": "버지니아, 메릴랜드, 워싱턴 D.C. 지역 서비스"
   }
 }

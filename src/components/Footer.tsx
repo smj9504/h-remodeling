@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Phone, Mail, Instagram, Facebook, MapPin } from 'lucide-react';
 import { IMAGES } from '@/data/images';
+import { FadeIn, StaggerChildren, StaggerItem } from '@/components/animations';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -29,13 +30,14 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <StaggerChildren staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
+          <StaggerItem>
           <div className="lg:col-span-1">
             <Link href={`/${locale}`} className="inline-flex items-center space-x-3 mb-6">
               <Image
                 src={IMAGES.logo.footer}
-                alt="H Remodeling Logo"
+                alt=""
                 width={40}
                 height={40}
                 className="w-10 h-10"
@@ -54,32 +56,36 @@ export default function Footer() {
                 href="https://instagram.com/hremodeling05"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-neutral-800 hover:bg-primary-600 transition-colors"
+                aria-label="Instagram"
+                className="w-11 h-11 flex items-center justify-center bg-neutral-800 hover:bg-primary-600 transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-5 h-5" aria-hidden="true" />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61584490866793"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-neutral-800 hover:bg-primary-600 transition-colors"
+                aria-label="Facebook"
+                className="w-11 h-11 flex items-center justify-center bg-neutral-800 hover:bg-primary-600 transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="w-5 h-5" aria-hidden="true" />
               </a>
             </div>
           </div>
 
+          </StaggerItem>
+
           {/* Quick Links */}
-          <div>
+          <StaggerItem><div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-6">
               {t('quickLinks')}
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 hover:text-white transition-colors text-sm"
+                    className="block py-1.5 text-neutral-400 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -88,17 +94,19 @@ export default function Footer() {
             </ul>
           </div>
 
+          </StaggerItem>
+
           {/* Services */}
-          <div>
+          <StaggerItem><div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-6">
               {t('services')}
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {services.map((service) => (
                 <li key={service.href}>
                   <Link
                     href={service.href}
-                    className="text-neutral-400 hover:text-white transition-colors text-sm"
+                    className="block py-1.5 text-neutral-400 hover:text-white transition-colors text-sm"
                   >
                     {service.label}
                   </Link>
@@ -107,8 +115,10 @@ export default function Footer() {
             </ul>
           </div>
 
+          </StaggerItem>
+
           {/* Contact */}
-          <div>
+          <StaggerItem><div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-6">
               {t('contact')}
             </h3>
@@ -116,36 +126,37 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+17035859517"
-                  className="flex items-center space-x-3 text-neutral-400 hover:text-white transition-colors"
+                  className="flex items-center space-x-3 py-1.5 text-neutral-400 hover:text-white transition-colors"
                 >
-                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <Phone className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   <span className="text-sm">(703) 585-9517</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:hremodeling05@gmail.com"
-                  className="flex items-center space-x-3 text-neutral-400 hover:text-white transition-colors"
+                  className="flex items-center space-x-3 py-1.5 text-neutral-400 hover:text-white transition-colors"
                 >
-                  <Mail className="w-4 h-4 flex-shrink-0" />
+                  <Mail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   <span className="text-sm">hremodeling05@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start space-x-3 text-neutral-400">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">Maryland & Virginia</span>
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-sm">Maryland, Virginia & D.C.</span>
               </li>
             </ul>
           </div>
-        </div>
+          </StaggerItem>
+        </StaggerChildren>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-neutral-800">
+        <FadeIn direction="up" delay={0.5} className="mt-12 pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral-500 text-sm">{t('copyright')}</p>
             <p className="text-neutral-500 text-sm">{t('servingArea')}</p>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </footer>
   );

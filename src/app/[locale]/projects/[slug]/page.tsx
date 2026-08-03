@@ -157,7 +157,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link
           href={`/${locale}/projects`}
-          className="inline-flex items-center text-neutral-600 hover:text-primary-600 transition-colors"
+          className="inline-flex items-center py-2 text-neutral-600 hover:text-primary-600 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           {t('backToProjects')}
@@ -166,7 +166,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* Main Image */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-        <div className="aspect-[21/9] relative overflow-hidden">
+        <div className="aspect-[16/9] sm:aspect-[21/9] relative overflow-hidden">
           <Image
             src={project.images[0]}
             alt={projectTitle}
@@ -248,7 +248,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
               <Link
                 href={`/${locale}/contact`}
-                className="block w-full text-center px-6 py-3 bg-neutral-900 text-white font-medium hover:bg-primary-700 transition-colors"
+                className="block w-full text-center px-6 py-3 bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors"
               >
                 {t('startYourProject')}
                 <ArrowRight className="inline-block ml-2 w-4 h-4" />

@@ -5,45 +5,59 @@
     "services": "服务",
     "projects": "项目",
     "contact": "联系我们",
-    "getQuote": "免费估价"
+    "getQuote": "预约免费上门"
   },
   "hero": {
-    "title": "可靠材料 · 透明报价 · 诚信施工",
-    "subtitle": "厨房 · 浴室 · 地板 · 露台 | 无中间差价，弗吉尼亚和马里兰州专业装修",
+    "title": "没有中间商，没有加价，只有好工程。",
+    "subtitle": "马里兰州和北弗吉尼亚持证厨房、浴室、地板、露台施工商。我们亲自施工——这就是价格合理的原因。",
+    "languageBadge": "中文、한국어、English 咨询服务",
     "cta": {
-      "quote": "免费咨询",
-      "projects": "施工案例"
+      "quote": "预约免费上门",
+      "projects": "查看施工案例"
     },
     "stats": {
-      "years": "10+年",
-      "yearsLabel": "施工经验",
-      "projects": "500+",
-      "projectsLabel": "项目实绩",
-      "consultation": "免费",
-      "consultationLabel": "现场咨询"
+      "yearsEnd": "10",
+      "yearsSuffix": "+",
+      "yearsLabel": "年从业经验",
+      "projectsEnd": "500",
+      "projectsSuffix": "+",
+      "projectsLabel": "完成项目",
+      "ratingEnd": "4.9",
+      "ratingSuffix": "/5",
+      "ratingLabel": "客户评分",
+      "source": "基于Google评价"
     }
   },
   "services": {
     "title": "我们的服务",
     "subtitle": "服务项目",
-    "description": "服务于 Maryland（马里兰州）和 Northern Virginia（北弗吉尼亚）的业主，我们以尊重、精心规划和贴心的个性化服务提供优质装修。家不仅仅是一栋建筑，更是家人团聚、创造美好回忆、生活发生的地方。",
+    "description": "在马里兰州和北弗吉尼亚提供厨房、浴室、地板和露台施工。我们亲自施工——没有转包商，没有中间加价，施工团队与您直接沟通。",
     "kitchen": {
-      "title": "马里兰州和北弗吉尼亚地区厨房改造",
-      "description": "H Remodeling 为您改造厨房。我们服务 Maryland（马里兰州）和 Northern Virginia（北弗吉尼亚），提供全面的厨房翻新服务，包括定制橱柜、石英和花岗岩台面、厨房岛台、现代电器、后挡板瓷砖和照明设计。"
+      "title": "为您的家庭打造理想厨房",
+      "description": "在马里兰州和北弗吉尼亚提供全面厨房翻新。定制橱柜、石英和花岗岩台面、岛台、现代电器、后挡板瓷砖、照明——全部由我们的团队亲自施工。",
+      "features": ["定制橱柜", "石英 & 花岗岩台面", "厨房岛台", "现代电器", "后挡板瓷砖", "照明设计"],
+      "imageAlt": "定制灰色橱柜和石英岛台台面的厨房翻新完成效果"
     },
     "bathroom": {
-      "title": "马里兰州和北弗吉尼亚浴室改造",
-      "description": "为 Maryland（马里兰州）和 Northern Virginia（北弗吉尼亚）提供豪华浴室改造服务。从步入式淋浴房、独立式浴缸到定制洗手台、地暖、瓷砖工程和现代固定装置 - 我们在您家中打造水疗般的浴室。"
+      "title": "让您每天期待回家的浴室",
+      "description": "步入式淋浴房、独立式浴缸、定制洗手台、地暖、瓷砖工程和现代固定装置。在马里兰州和北弗吉尼亚的住宅中打造水疗级浴室。",
+      "features": ["步入式淋浴房", "独立式浴缸", "定制洗手台", "地暖", "瓷砖工程", "现代固定装置"],
+      "imageAlt": "配步入式淋浴房、定制洗手台和地暖瓷砖的现代浴室"
     },
     "flooring": {
-      "title": "地板安装 - 马里兰州和北弗吉尼亚",
-      "description": "为 Maryland（马里兰州）和 Northern Virginia（北弗吉尼亚）的住宅提供优质地板安装服务。我们专注于硬木、豪华乙烯基地板（LVP）、瓷砖和石材、地毯、环氧地坪和层压板，并提供专业的底层地板维修服务。"
+      "title": "经得起日常考验的地板",
+      "description": "硬木、豪华乙烯基地板、瓷砖和石材、地毯、环氧地坪和层压板——包括专业底层地板维修。在马里兰州和北弗吉尼亚施工美观耐用的地板。",
+      "features": ["硬木地板", "豪华乙烯基地板 (LVP)", "瓷砖 & 石材", "地毯", "层压板", "底层地板维修"],
+      "imageAlt": "开放式客厅中铺设的宽板硬木地板"
     },
     "decking": {
-      "title": "露台建造和维修 - 马里兰州和北弗吉尼亚",
-      "description": "服务于 Maryland（马里兰州）和 Northern Virginia（北弗吉尼亚）的定制露台建造和维修。专业安装复合露台、木质露台、栏杆、凉亭和户外照明，打造美丽的户外生活空间。"
+      "title": "让户外空间物有所值",
+      "description": "复合和木质露台、栏杆、凉亭和户外照明。在马里兰州和北弗吉尼亚建造和维修露台——按照您的实际生活方式设计。",
+      "features": ["复合露台", "木质露台", "露台栏杆", "凉亭", "户外照明", "露台维修"],
+      "imageAlt": "配内置LED照明和多层设计的复合露台"
     },
-    "learnMore": "了解更多"
+    "learnMore": "预约免费上门",
+    "seeWork": "查看施工案例"
   },
   "projects": {
     "title": "我们的项目",
@@ -185,6 +199,28 @@
       "description": "时尚的深棕色复合平台打造现代精致的屋顶休闲空间。低维护材料和简洁线条让这个城市户外空间既时尚又实用，非常适合都市生活。"
     }
   },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "真实评价",
+    "googleCta": "在Google上查看更多评价",
+    "reviews": {
+      "1": {
+        "name": "Jennifer L.",
+        "location": "硬木地板 — McLean, VA",
+        "text": "在整栋房子里铺设了漂亮的硬木地板。团队尊重我们的空间，工艺精湛。价格透明，没有额外收费。"
+      },
+      "2": {
+        "name": "Sarah M.",
+        "location": "厨房改造 — Bethesda, MD",
+        "text": "H Remodeling 将我们的厨房改造得超乎想象。团队专业、准时，施工质量出色。强烈推荐！"
+      },
+      "3": {
+        "name": "Michael T.",
+        "location": "浴室翻新 — Arlington, VA",
+        "text": "浴室翻新工作细致入微。每一步都及时沟通，按时完工。成果是一个水疗级的空间。"
+      }
+    }
+  },
   "about": {
     "title": "关于我们",
     "subtitle": "公司介绍",
@@ -215,7 +251,7 @@
   "contact": {
     "title": "联系我们",
     "subtitle": "取得联系",
-    "description": "准备开始您的装修项目？联系我们获取免费咨询和估价。",
+    "description": "准备开始您的装修项目？预约免费上门，获取清晰的书面报价。",
     "form": {
       "name": "您的姓名",
       "email": "电子邮件",
@@ -225,8 +261,32 @@
       "message": "告诉我们您的项目",
       "submit": "发送消息",
       "sending": "发送中...",
-      "success": "谢谢！我们会尽快回复您。",
-      "error": "出了点问题，请重试。"
+      "success": "您的请求已收到。",
+      "successDetail": "我们将在一个工作日内致电，安排免费上门时间。",
+      "successCta": "或者现在致电",
+      "error": "出了点问题，请重试。",
+      "reassurance": "没有压力，没有义务。我们会在24小时内回复。",
+      "phoneHint": "我们会致电安排上门时间。",
+      "messagePlaceholder": "您想翻新哪些房间？有时间或预算范围吗？",
+      "nameRequired": "请输入您的姓名。",
+      "nameMaxLength": "姓名不能超过100个字符。",
+      "phoneRequired": "请输入您的电话号码。",
+      "phoneInvalid": "请输入有效的电话号码。",
+      "emailInvalid": "请输入有效的电子邮件地址。",
+      "serviceRequired": "请选择一项服务。",
+      "messageRequired": "请告诉我们您的项目。",
+      "messageMaxLength": "消息不能超过2000个字符。",
+      "networkError": "无法连接。请检查您的网络连接并重试。"
+    },
+    "sidebar": {
+      "contactInfo": "联系方式",
+      "serviceAreas": "服务区域",
+      "maryland": "马里兰州",
+      "virginia": "弗吉尼亚州",
+      "dc": "华盛顿特区",
+      "marylandAreas": "Bethesda, Rockville, Silver Spring, Potomac, Chevy Chase",
+      "virginiaAreas": "Arlington, McLean, Tysons, Fairfax, Falls Church",
+      "dcAreas": "Georgetown, Capitol Hill, Dupont Circle"
     },
     "info": {
       "phone": "电话",
@@ -234,7 +294,7 @@
       "hours": "营业时间",
       "hoursValue": "周一至周六：上午8点 - 下午6点",
       "area": "服务区域",
-      "areaValue": "弗吉尼亚州、马里兰州"
+      "areaValue": "弗吉尼亚州、马里兰州和华盛顿特区"
     },
     "social": {
       "title": "关注我们",
@@ -246,16 +306,16 @@
     }
   },
   "cta": {
-    "title": "准备好改造您的家了吗？",
-    "description": "今天联系我们获取免费咨询和估价。",
-    "button": "开始咨询"
+    "title": "预算内完成，没有意外费用。",
+    "description": "我们上门查看您的项目，提供清晰的书面报价——不施压，不附带义务。",
+    "button": "预约免费上门"
   },
   "footer": {
-    "description": "弗吉尼亚州和马里兰州优质装修服务。厨房、浴室、地板和露台专家。",
+    "description": "持证保险，2014年以来亲自施工。DMV地区厨房、浴室、地板和露台专家。",
     "quickLinks": "快速链接",
     "services": "服务",
     "contact": "联系方式",
-    "copyright": "© 2024 H Remodeling. 版权所有。",
-    "servingArea": "服务于弗吉尼亚州和马里兰州"
+    "copyright": "© 2026 H Remodeling. 版权所有。",
+    "servingArea": "服务于弗吉尼亚州、马里兰州和华盛顿特区"
   }
 }

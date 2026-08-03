@@ -36,7 +36,8 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   
   const t = await getTranslations('projects');
-  
+  const tCta = await getTranslations('cta');
+
   const translations = {
     title: t('title'),
     subtitle: t('subtitle'),
@@ -49,6 +50,11 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
       bathroom: t('categories.bathroom'),
       flooring: t('categories.flooring'),
       decking: t('categories.decking'),
+    },
+    cta: {
+      title: tCta('title'),
+      description: tCta('description'),
+      button: tCta('button'),
     },
   };
 

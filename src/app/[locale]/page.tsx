@@ -1,9 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight, CheckCircle } from 'lucide-react';
 import { routing } from '@/i18n/routing';
 import { IMAGES } from '@/data/images';
+import HomeClient from './HomeClient';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -56,205 +54,93 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-const servicesData = [
-  {
-    id: 'kitchen' as const,
-    image: IMAGES.services.kitchen,
-    features: ['Custom Cabinets', 'Quartz & Granite Countertops', 'Kitchen Islands', 'Modern Appliances', 'Backsplash Tile', 'Lighting Design'],
-  },
-  {
-    id: 'bathroom' as const,
-    image: IMAGES.services.bathroom,
-    features: ['Walk-in Showers', 'Freestanding Tubs', 'Custom Vanities', 'Heated Floors', 'Tile Work', 'Modern Fixtures'],
-  },
-  {
-    id: 'flooring' as const,
-    image: IMAGES.services.flooring,
-    features: ['Hardwood', 'Luxury Vinyl Plank (LVP)', 'Tile & Stone', 'Carpet', 'Laminate', 'Subfloor Repair'],
-  },
-  {
-    id: 'decking' as const,
-    image: IMAGES.services.decking,
-    features: ['Composite Decking', 'Wood Decking', 'Deck Railings', 'Pergolas', 'Outdoor Lighting', 'Deck Repair'],
-  },
+const servicesDataRaw = [
+  { id: 'kitchen' as const, image: IMAGES.services.kitchen },
+  { id: 'bathroom' as const, image: IMAGES.services.bathroom },
+  { id: 'flooring' as const, image: IMAGES.services.flooring },
+  { id: 'decking' as const, image: IMAGES.services.decking },
 ];
 
-export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   const tHero = await getTranslations('hero');
   const t = await getTranslations('services');
+  const tNav = await getTranslations('navigation');
   const tCta = await getTranslations('cta');
+  const tTest = await getTranslations('testimonials');
+
+  const servicesData = servicesDataRaw.map((service) => ({
+    ...service,
+    title: t(`${service.id}.title`),
+    description: t(`${service.id}.description`),
+    imageAlt: t(`${service.id}.imageAlt`),
+    features: t.raw(`${service.id}.features`) as string[],
+  }));
 
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src={IMAGES.hero.home}
-            alt="Home remodeling"
-            fill
-            priority
-            className="object-cover"
-          />
-          {/* Dark Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            {/* H1 Headline with Location Keywords */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              {tHero('title')}
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-xl sm:text-2xl text-neutral-300 mb-8 leading-relaxed">
-              {tHero('subtitle')}
-            </p>
-
-            {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 mb-10 max-w-2xl">
-              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
-                  {tHero('stats.years')}
-                </div>
-                <div className="text-xs sm:text-sm text-neutral-400">
-                  {tHero('stats.yearsLabel')}
-                </div>
-              </div>
-              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
-                  {tHero('stats.projects')}
-                </div>
-                <div className="text-xs sm:text-sm text-neutral-400">
-                  {tHero('stats.projectsLabel')}
-                </div>
-              </div>
-              <div className="text-center p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-1">
-                  {tHero('stats.consultation')}
-                </div>
-                <div className="text-xs sm:text-sm text-neutral-400">
-                  {tHero('stats.consultationLabel')}
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href={`/${locale}/contact`}
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl"
-              >
-                {tHero('cta.quote')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                href={`/${locale}/projects`}
-                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-semibold text-lg hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-200"
-              >
-                {tHero('cta.projects')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl text-center mx-auto mb-16">
-            <p className="text-primary-600 font-medium tracking-wider uppercase mb-3">
-              {t('subtitle')}
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-neutral-900 mb-6">
-              {t('title')}
-            </h2>
-            <p className="text-lg text-neutral-600">
-              {t('description')}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Services List */}
-      {servicesData.map((service, index) => (
-        <section
-          key={service.id}
-          id={service.id}
-          className={`py-24 ${index % 2 === 1 ? 'bg-neutral-50' : 'bg-white'}`}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-              index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-            }`}>
-              {/* Image */}
-              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={t(`${service.id}.title`)}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <h2 className="text-3xl sm:text-4xl font-display font-bold text-neutral-900 mb-4">
-                  {t(`${service.id}.title`)}
-                </h2>
-                <p className="text-lg text-neutral-600 mb-8">
-                  {t(`${service.id}.description`)}
-                </p>
-
-                {/* Features */}
-                <div className="grid grid-cols-2 gap-3 mb-8">
-                  {service.features.map((feature) => (
-                    <div key={feature} className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0" />
-                      <span className="text-sm text-neutral-700">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <Link
-                  href={`/${locale}/contact`}
-                  className="inline-flex items-center px-6 py-3 bg-neutral-900 text-white font-medium hover:bg-primary-700 transition-colors"
-                >
-                  Get a Quote
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* CTA Section */}
-      <section className="py-24 bg-neutral-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-4">
-            {tCta('title')}
-          </h2>
-          <p className="text-lg text-neutral-400 mb-8">
-            {tCta('description')}
-          </p>
-          <Link
-            href={`/${locale}/contact`}
-            className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors"
-          >
-            {tCta('button')}
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Link>
-        </div>
-      </section>
-    </div>
+    <HomeClient
+      locale={locale}
+      heroImage={IMAGES.hero.home}
+      translations={{
+        hero: {
+          title: tHero('title'),
+          subtitle: tHero('subtitle'),
+          languageBadge: tHero('languageBadge'),
+          stats: {
+            yearsEnd: tHero('stats.yearsEnd'),
+            yearsSuffix: tHero('stats.yearsSuffix'),
+            yearsLabel: tHero('stats.yearsLabel'),
+            projectsEnd: tHero('stats.projectsEnd'),
+            projectsSuffix: tHero('stats.projectsSuffix'),
+            projectsLabel: tHero('stats.projectsLabel'),
+            ratingEnd: tHero('stats.ratingEnd'),
+            ratingSuffix: tHero('stats.ratingSuffix'),
+            ratingLabel: tHero('stats.ratingLabel'),
+            source: tHero('stats.source'),
+          },
+          cta: {
+            quote: tHero('cta.quote'),
+            projects: tHero('cta.projects'),
+          },
+        },
+        services: {
+          subtitle: t('subtitle'),
+          title: t('title'),
+          description: t('description'),
+          seeWork: t('seeWork'),
+        },
+        testimonials: {
+          title: tTest('title'),
+          subtitle: tTest('subtitle'),
+          googleCta: tTest('googleCta'),
+          reviews: {
+            '1': {
+              name: tTest('reviews.1.name'),
+              location: tTest('reviews.1.location'),
+              text: tTest('reviews.1.text'),
+            },
+            '2': {
+              name: tTest('reviews.2.name'),
+              location: tTest('reviews.2.location'),
+              text: tTest('reviews.2.text'),
+            },
+            '3': {
+              name: tTest('reviews.3.name'),
+              location: tTest('reviews.3.location'),
+              text: tTest('reviews.3.text'),
+            },
+          },
+        },
+        cta: {
+          title: tCta('title'),
+          description: tCta('description'),
+          button: tCta('button'),
+        },
+        getQuote: tNav('getQuote'),
+      }}
+      servicesData={servicesData}
+    />
   );
 }

@@ -6,6 +6,7 @@ import Script from 'next/script';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import '../globals.css';
 
 const BASE_URL = 'https://www.h-remodeling.com';
@@ -226,7 +227,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className="bg-white text-neutral-900 antialiased">
+      <body className="bg-white text-neutral-900 antialiased overflow-x-hidden">
         {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -243,7 +244,9 @@ export default async function LocaleLayout({
         
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main>
+            <ErrorBoundary>{children}</ErrorBoundary>
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>

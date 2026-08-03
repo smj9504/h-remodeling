@@ -5,45 +5,59 @@
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact",
-    "getQuote": "Get a Quote"
+    "getQuote": "Schedule a Free Visit"
   },
   "hero": {
-    "title": "Quality Materials. Honest Pricing. Expert Craftsmanship.",
-    "subtitle": "Kitchen · Bathroom · Flooring · Deck | Fair prices with no middleman markup in Virginia & Maryland",
+    "title": "No Middleman. No Markup. Just Great Work.",
+    "subtitle": "Licensed kitchen, bath, flooring & deck contractor in Maryland and Northern Virginia. We do the work ourselves — that's how we keep prices fair.",
+    "languageBadge": "We speak English, 한국어, and 中文",
     "cta": {
-      "quote": "Free Consultation",
-      "projects": "Our Work"
+      "quote": "Schedule a Free Visit",
+      "projects": "See Our Work"
     },
     "stats": {
-      "years": "10+ Years",
-      "yearsLabel": "Experience",
-      "projects": "500+",
-      "projectsLabel": "Projects Done",
-      "consultation": "Free",
-      "consultationLabel": "On-Site Visit"
+      "yearsEnd": "10",
+      "yearsSuffix": "+",
+      "yearsLabel": "Years in Business",
+      "projectsEnd": "500",
+      "projectsSuffix": "+",
+      "projectsLabel": "Projects Completed",
+      "ratingEnd": "4.9",
+      "ratingSuffix": "/5",
+      "ratingLabel": "Client Rating",
+      "source": "Based on Google reviews"
     }
   },
   "services": {
     "title": "Our Services",
     "subtitle": "What We Do",
-    "description": "Serving homeowners across Maryland and Northern Virginia, we bring quality remodeling services with respect, careful planning, and a warm, personalized touch. Your home is more than just a structure - it's where your family gathers, where memories are made, and where life happens.",
+    "description": "Kitchen, bathroom, flooring, and deck work across Maryland and Northern Virginia. We do the work ourselves — no subcontractors, no middleman markup, and a direct line to the people building your project.",
     "kitchen": {
-      "title": "Kitchen Remodeling in Maryland & Northern Virginia",
-      "description": "Transform your kitchen with H Remodeling. We serve Maryland and Northern Virginia with complete kitchen renovations including custom cabinets, quartz & granite countertops, kitchen islands, modern appliances, backsplash tile, and lighting design."
+      "title": "A Kitchen That Works for Your Family",
+      "description": "Complete kitchen renovations across Maryland and Northern Virginia. Custom cabinets, quartz and granite countertops, islands, modern appliances, backsplash tile, and lighting — all installed by our own crew.",
+      "features": ["Custom Cabinets", "Quartz & Granite Countertops", "Kitchen Islands", "Modern Appliances", "Backsplash Tile", "Lighting Design"],
+      "imageAlt": "Completed kitchen renovation with custom gray cabinetry and quartz island countertop"
     },
     "bathroom": {
-      "title": "Bathroom Renovation in MD & Northern VA",
-      "description": "Luxurious bathroom remodeling services across Maryland and Northern Virginia. From walk-in showers and freestanding tubs to custom vanities, heated floors, and modern fixtures - we create spa-like bathrooms in your home."
+      "title": "The Bathroom You Want to Come Home To",
+      "description": "Walk-in showers, freestanding tubs, custom vanities, heated floors, tile work, and modern fixtures. We build spa-quality bathrooms in homes across Maryland and Northern Virginia.",
+      "features": ["Walk-in Showers", "Freestanding Tubs", "Custom Vanities", "Heated Floors", "Tile Work", "Modern Fixtures"],
+      "imageAlt": "Modern bathroom with walk-in shower, custom vanity, and heated tile floor"
     },
     "flooring": {
-      "title": "Flooring Installation - MD & Northern VA",
-      "description": "Premium flooring installation for homes in Maryland and Northern Virginia. We specialize in hardwood, luxury vinyl plank (LVP), tile & stone, carpet, epoxy flooring, and laminate with expert subfloor repair services."
+      "title": "Floors That Hold Up to Real Life",
+      "description": "Hardwood, luxury vinyl plank, tile and stone, carpet, epoxy, and laminate — with expert subfloor repair. We specialize in flooring that looks great and lasts, installed across MD and Northern VA.",
+      "features": ["Hardwood", "Luxury Vinyl Plank (LVP)", "Tile & Stone", "Carpet", "Laminate", "Subfloor Repair"],
+      "imageAlt": "Wide-plank hardwood flooring installed in an open living area"
     },
     "decking": {
-      "title": "Deck Building & Repair - MD & Northern VA",
-      "description": "Custom deck construction and repair serving Maryland and Northern Virginia. Expert installation of composite decking, wood decking, railings, pergolas, and outdoor lighting for beautiful outdoor living spaces."
+      "title": "Outdoor Space That Earns Its Square Footage",
+      "description": "Composite and wood decking, railings, pergolas, and outdoor lighting. We build and repair decks across Maryland and Northern Virginia — designed for how you actually live outside.",
+      "features": ["Composite Decking", "Wood Decking", "Deck Railings", "Pergolas", "Outdoor Lighting", "Deck Repair"],
+      "imageAlt": "Composite deck with built-in LED lighting and multi-level design"
     },
-    "learnMore": "Learn More"
+    "learnMore": "Schedule a Free Visit",
+    "seeWork": "See Our Work"
   },
   "projects": {
     "title": "Our Projects",
@@ -185,6 +199,28 @@
       "description": "Sleek dark brown composite decking creates a modern, sophisticated rooftop retreat. Low-maintenance materials and clean lines make this urban outdoor space both stylish and practical for city living."
     }
   },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real Reviews",
+    "googleCta": "Read more reviews on Google",
+    "reviews": {
+      "1": {
+        "name": "Jennifer L.",
+        "location": "Hardwood Flooring — McLean, VA",
+        "text": "Beautiful hardwood floors installed throughout our home. The team was respectful of our space and the craftsmanship is impeccable. Fair pricing with no surprises."
+      },
+      "2": {
+        "name": "Sarah M.",
+        "location": "Kitchen Remodel — Bethesda, MD",
+        "text": "H Remodeling transformed our kitchen beyond what we imagined. The team was professional, on time, and the quality of work is outstanding. Highly recommend!"
+      },
+      "3": {
+        "name": "Michael T.",
+        "location": "Bathroom Renovation — Arlington, VA",
+        "text": "Our bathroom renovation was handled with incredible attention to detail. They communicated every step and finished on schedule. The result is a spa-like retreat."
+      }
+    }
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Who We Are",
@@ -215,7 +251,7 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in Touch",
-    "description": "Ready to start your remodeling project? Contact us for a free consultation and estimate.",
+    "description": "Ready to start your remodeling project? Schedule a free visit and get a clear written estimate.",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
@@ -225,8 +261,32 @@
       "message": "Tell us about your project",
       "submit": "Send Message",
       "sending": "Sending...",
-      "success": "Thank you! We'll get back to you soon.",
-      "error": "Something went wrong. Please try again."
+      "success": "Your request has been received.",
+      "successDetail": "We'll call you within one business day to schedule a convenient time for a free home visit.",
+      "successCta": "Or call us now",
+      "error": "Something went wrong. Please try again.",
+      "reassurance": "No pressure, no obligation. We respond within 24 hours.",
+      "phoneHint": "We'll call to schedule your visit.",
+      "messagePlaceholder": "What rooms are you working on? Any timeline or budget range in mind?",
+      "nameRequired": "Please enter your name.",
+      "nameMaxLength": "Name must be under 100 characters.",
+      "phoneRequired": "Please enter your phone number.",
+      "phoneInvalid": "Please enter a valid phone number.",
+      "emailInvalid": "Please enter a valid email address.",
+      "serviceRequired": "Please select a service.",
+      "messageRequired": "Please tell us about your project.",
+      "messageMaxLength": "Message must be under 2000 characters.",
+      "networkError": "Could not connect. Please check your internet and try again."
+    },
+    "sidebar": {
+      "contactInfo": "Contact Information",
+      "serviceAreas": "Service Areas",
+      "maryland": "Maryland",
+      "virginia": "Virginia",
+      "dc": "D.C.",
+      "marylandAreas": "Bethesda, Rockville, Silver Spring, Potomac, Chevy Chase",
+      "virginiaAreas": "Arlington, McLean, Tysons, Fairfax, Falls Church",
+      "dcAreas": "Georgetown, Capitol Hill, Dupont Circle"
     },
     "info": {
       "phone": "Phone",
@@ -234,7 +294,7 @@
       "hours": "Business Hours",
       "hoursValue": "Mon - Sat: 8AM - 6PM",
       "area": "Service Area",
-      "areaValue": "Virginia, Maryland"
+      "areaValue": "Virginia, Maryland & D.C."
     },
     "social": {
       "title": "Follow Us",
@@ -246,16 +306,16 @@
     }
   },
   "cta": {
-    "title": "Ready to Transform Your Home?",
-    "description": "Contact us today for a free consultation and estimate.",
-    "button": "Get Started"
+    "title": "Your Home, On Budget. No Surprises.",
+    "description": "We'll visit your home, walk through your project, and give you a clear written estimate — no pressure, no obligation.",
+    "button": "Schedule a Free Visit"
   },
   "footer": {
-    "description": "Quality remodeling services in Virginia and Maryland. Kitchen, bathroom, flooring, and decking specialists.",
+    "description": "Licensed, insured, and doing the work ourselves since 2014. Kitchen, bathroom, flooring, and deck specialists in the DMV.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "contact": "Contact",
-    "copyright": "© 2024 H Remodeling. All rights reserved.",
-    "servingArea": "Proudly serving Virginia and Maryland."
+    "copyright": "© 2026 H Remodeling. All rights reserved.",
+    "servingArea": "Proudly serving Virginia, Maryland, and Washington D.C."
   }
 }

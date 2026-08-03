@@ -1,6 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+const VALID_SERVICES = ['kitchen', 'bathroom', 'flooring', 'decking'];
+const MAX_NAME_LENGTH = 100;
+const MAX_MESSAGE_LENGTH = 2000;
+const MAX_EMAIL_LENGTH = 254;
+const MAX_PHONE_LENGTH = 20;
+const PHONE_PATTERN = /^[+]?[\d\s().-]{7,20}$/;
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -14,10 +30,65 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Type and length validation
+    if (typeof name !== 'string' || typeof phone !== 'string' || typeof service !== 'string' || typeof message !== 'string') {
+      return NextResponse.json(
+        { error: 'Invalid field types' },
+        { status: 400 }
+      );
+    }
+
+    const trimmedName = name.trim();
+    const trimmedPhone = phone.trim();
+    const trimmedMessage = message.trim();
+    const trimmedEmail = typeof email === 'string' ? email.trim() : '';
+
+    if (trimmedName.length === 0 || trimmedName.length > MAX_NAME_LENGTH) {
+      return NextResponse.json(
+        { error: `Name must be between 1 and ${MAX_NAME_LENGTH} characters` },
+        { status: 400 }
+      );
+    }
+
+    if (!PHONE_PATTERN.test(trimmedPhone) || trimmedPhone.length > MAX_PHONE_LENGTH) {
+      return NextResponse.json(
+        { error: 'Invalid phone number' },
+        { status: 400 }
+      );
+    }
+
+    if (!VALID_SERVICES.includes(service)) {
+      return NextResponse.json(
+        { error: 'Invalid service selection' },
+        { status: 400 }
+      );
+    }
+
+    if (trimmedMessage.length === 0 || trimmedMessage.length > MAX_MESSAGE_LENGTH) {
+      return NextResponse.json(
+        { error: `Message must be between 1 and ${MAX_MESSAGE_LENGTH} characters` },
+        { status: 400 }
+      );
+    }
+
+    if (trimmedEmail && (trimmedEmail.length > MAX_EMAIL_LENGTH || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(trimmedEmail))) {
+      return NextResponse.json(
+        { error: 'Invalid email address' },
+        { status: 400 }
+      );
+    }
+
+    // Sanitize all values for email template
+    const safeName = escapeHtml(trimmedName);
+    const safePhone = escapeHtml(trimmedPhone);
+    const safeEmail = escapeHtml(trimmedEmail);
+    const safeService = escapeHtml(service);
+    const safeMessage = escapeHtml(trimmedMessage);
+
     // Email content
     const emailSubject = `New Contact Form Submission - ${service}`;
 
-    // HTML Email Template
+    // HTML Email Template (sanitized)
     const emailHtml = `
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +124,7 @@ export async function POST(request: NextRequest) {
                   Service Requested
                 </p>
                 <p style="margin: 6px 0 0 0; color: #31261e; font-size: 18px; font-weight: 600;">
-                  ${service}
+                  ${safeService}
                 </p>
               </div>
             </td>
@@ -71,7 +142,7 @@ export async function POST(request: NextRequest) {
                       Name
                     </p>
                     <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                      ${name}
+                      ${safeName}
                     </p>
                   </td>
                 </tr>
@@ -83,20 +154,20 @@ export async function POST(request: NextRequest) {
                       Phone
                     </p>
                     <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                      <a href="tel:${phone}" style="color: #b3936b; text-decoration: none;">${phone}</a>
+                      <a href="tel:${safePhone}" style="color: #b3936b; text-decoration: none;">${safePhone}</a>
                     </p>
                   </td>
                 </tr>
 
                 <!-- Email -->
-                ${email ? `
+                ${trimmedEmail ? `
                 <tr>
                   <td style="padding-bottom: 20px;">
                     <p style="margin: 0; color: #715845; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px;">
                       Email
                     </p>
                     <p style="margin: 4px 0 0 0; color: #31261e; font-size: 16px; font-weight: 600;">
-                      <a href="mailto:${email}" style="color: #b3936b; text-decoration: none;">${email}</a>
+                      <a href="mailto:${safeEmail}" style="color: #b3936b; text-decoration: none;">${safeEmail}</a>
                     </p>
                   </td>
                 </tr>
@@ -114,7 +185,7 @@ export async function POST(request: NextRequest) {
                   Message
                 </p>
                 <p style="margin: 0; color: #31261e; font-size: 15px; line-height: 1.6; white-space: pre-wrap;">
-${message}
+${safeMessage}
                 </p>
               </div>
             </td>
@@ -128,7 +199,7 @@ ${message}
                 <a href="https://www.h-remodeling.com" style="color: #b3936b; text-decoration: none; font-weight: 600;">www.h-remodeling.com</a>
               </p>
               <p style="margin: 12px 0 0 0; color: #8a6a50; font-size: 11px;">
-                © ${new Date().getFullYear()} H Remodeling. All rights reserved.
+                &copy; ${new Date().getFullYear()} H Remodeling. All rights reserved.
               </p>
             </td>
           </tr>
@@ -145,13 +216,13 @@ ${message}
     const emailText = `
 New contact form submission from H Remodeling website:
 
-Name: ${name}
-Phone: ${phone}
-${email ? `Email: ${email}` : 'Email: Not provided'}
+Name: ${trimmedName}
+Phone: ${trimmedPhone}
+${trimmedEmail ? `Email: ${trimmedEmail}` : 'Email: Not provided'}
 Service: ${service}
 
 Message:
-${message}
+${trimmedMessage}
 
 ---
 This email was sent from the contact form on www.h-remodeling.com
@@ -168,11 +239,11 @@ This email was sent from the contact form on www.h-remodeling.com
         subject: emailSubject,
         body: emailText,
       });
-      
+
       return NextResponse.json(
-        { 
+        {
           error: 'Email service not configured. Please set GMAIL_APP_PASSWORD environment variable.',
-          success: false 
+          success: false
         },
         { status: 500 }
       );
@@ -185,7 +256,6 @@ This email was sent from the contact form on www.h-remodeling.com
         user: gmailUser,
         pass: gmailAppPassword,
       },
-      // Add connection timeout
       connectionTimeout: 5000,
       greetingTimeout: 5000,
       socketTimeout: 5000,
@@ -195,33 +265,22 @@ This email was sent from the contact form on www.h-remodeling.com
     const info = await transporter.sendMail({
       from: `H Remodeling <${gmailUser}>`,
       to: 'hremodeling05@gmail.com',
-      replyTo: email || gmailUser,
+      replyTo: trimmedEmail || gmailUser,
       subject: emailSubject,
       html: emailHtml,
       text: emailText,
     });
-    
+
     return NextResponse.json(
       { success: true, messageId: info.messageId },
       { status: 200 }
     );
   } catch (error) {
     console.error('Contact form error:', error);
-    
-    // Provide more detailed error message in development
-    const errorMessage = process.env.NODE_ENV === 'development' 
-      ? error instanceof Error ? error.message : 'Unknown error occurred'
-      : 'Failed to send email. Please try again later.';
-    
+
     return NextResponse.json(
-      { 
-        error: errorMessage,
-        details: process.env.NODE_ENV === 'development' && error instanceof Error 
-          ? error.stack 
-          : undefined
-      },
+      { error: 'Failed to send email. Please try again later.' },
       { status: 500 }
     );
   }
 }
-
